@@ -48,7 +48,7 @@ templateFooter.innerHTML = `
         </div>
         <div class="col-sm-3">
             <div class="footer-logo hidden-xs"><a href="index-2.html"><img src="images/footer-logo.png" class="img-responsive" alt=""></a></div>
-            <p>© 2020 <span>Edumart</span>. All rights reserved</p>
+            <p>© 2020 <span>Aps-Sabeel</span>. All rights reserved</p>
             <ul class="terms clearfix">
                 <li><a href="terms.html">TERMS OF USE</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>

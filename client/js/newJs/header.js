@@ -15,10 +15,10 @@ template.innerHTML = `
         </ul>
         <div class="right-block clearfix">
             <ul class="top-nav hidden-xs">
-                <li><a href="register.html">Register</a></li>
+             <!-----   <li><a href="register.html">Register</a></li> ---->
                 <li><a href="apply-online.html">Apply Online</a></li>
                 
-                <li><a href="faq1.html">FAQs</a></li>
+                <li><a href="faq2.html">FAQs</a></li>
             </ul>
            
         </div>
