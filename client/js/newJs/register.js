@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const form = document.querySelector('.form-outer');
 const API_URL = `/api/signup`;
 
