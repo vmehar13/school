@@ -48,7 +48,7 @@ app.use("/api", galleryRoutes);
 
 
 app.use("/api/upload", express.static('upload'));
-app.use('/api/client', express.static('client'))
+app.use('/client', express.static('client'))
 
 
 
