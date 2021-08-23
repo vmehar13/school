@@ -4,7 +4,7 @@ let userId = JSON.parse(localStorage.getItem('user'));
 let categoryId = JSON.parse(localStorage.getItem('categoryId'));
 
 
-const API_URL = `http://localhost:8000/api/admin/register/${userId}`;
+const API_URL = `/api/admin/register/${userId}`;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

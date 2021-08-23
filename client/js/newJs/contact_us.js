@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('.contact');
-const API_URL_CONTACT = 'http://localhost:8000/api/contact/create';
+const API_URL_CONTACT = '/api/contact/create';
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();

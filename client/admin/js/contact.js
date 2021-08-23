@@ -1,7 +1,7 @@
 let userId = JSON.parse(localStorage.getItem('userId'));
 let token = JSON.parse(localStorage.getItem('token'));
 
-const API_URL = `http://localhost:8000/api/admin/contact/${userId}`
+const API_URL = `/api/admin/contact/${userId}`
 const panel = document.querySelector('.panel');
 
 

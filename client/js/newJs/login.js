@@ -1,5 +1,5 @@
 const form = document.querySelector('.form-outer');
-const API_URL = 'http://localhost:8000/api/signin';
+const API_URL = '/api/signin';
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

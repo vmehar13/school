@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8000/api/banner/611b514a425b532a18dad041"
+const API_URL = "/api/banner/611b514a425b532a18dad041"
 const panel = document.querySelector('.panel');
 
 

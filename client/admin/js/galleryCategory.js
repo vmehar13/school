@@ -7,7 +7,7 @@ let token = JSON.parse(localStorage.getItem('token'));
 change()
 
 function changes() {
-    form.action = `http://localhost:8000/api/create/${userId}`;
+    form.action = `/api/create/${userId}`;
 }
 
 // listCategory();

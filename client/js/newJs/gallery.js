@@ -1,4 +1,4 @@
-const API_URL_GALLERY = `http://localhost:8000/api/gallery`
+const API_URL_GALLERY = `/api/gallery`
 const panel1 = document.querySelector('.panel1');
 
 
