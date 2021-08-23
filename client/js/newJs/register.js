@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const form = document.querySelector('.form-outer');
-const API_URL = `${process.env.PORT}/api/signup`;
+const API_URL = `/api/signup`;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
