@@ -41,5 +41,5 @@ form.addEventListener('submit', (e) => {
         alert("User Register Sucessfully")
     })
       
-      window.location.pathname = '/client/index.html'
+    //  window.location.pathname = '/client/index.html'
 })
