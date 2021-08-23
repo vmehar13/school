@@ -20,6 +20,7 @@ exports.createRegister = (req, res) => {
  
     const register = new Register({
         _id: new mongoose.Types.ObjectId(),
+        profile: req.files.profilePic[0].path,
         field1: req.body.field1,
         tc: req.body.tc,
         studentName: req.body.studentName,
@@ -51,7 +52,6 @@ exports.createRegister = (req, res) => {
         aadhar: req.body.aadhar,
         aadharimg: req.files.aadharImg[0].path,
 
-        profile: req.files.profilePic[0].path,
 
 
 /*
