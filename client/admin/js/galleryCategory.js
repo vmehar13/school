@@ -1,0 +1,92 @@
+const formGallery = document.getElementById('formGallery')
+
+
+let userId = JSON.parse(localStorage.getItem('userId'));
+let token = JSON.parse(localStorage.getItem('token'));
+
+change()
+
+function changes() {
+    form.action = `http://localhost:8000/api/create/${userId}`;
+}
+
+// listCategory();
+
+// function listCategory() {
+//     fetch(API_URL, {
+//         method: 'GET',
+//         headers: {
+//             'Authorization': `Bearer ${token}`,
+//             'Content-Type': 'application/json'
+//         }
+//     })
+//     .then(res => res.json())
+//     .then(category => {
+//         console.log(category);
+//         category.forEach(category => {
+//             const tr = document.createElement('tr');
+            
+//             const td = document.createElement('td');
+//             td.textContent
+            
+//             const td1 = document.createElement('td');
+//             td1.textContent = category._id;
+//             td1.id = category._id;
+
+//             const td2 = document.createElement('td');
+//             td2.textContent = category.name;
+
+//             const td3 = document.createElement('td');
+//             const abc = document.createElement('a');
+//             abc.type = 'submit';
+        
+//             abc.textContent = "Edit";
+//             abc.addEventListener('click', () => {
+//                 localStorage.setItem("categoryId", JSON.stringify(category._id)); 
+                
+//                 window.location.pathname = '/updateCategory.html'
+//             })
+//             td3.appendChild(abc);
+
+
+//             const td4 = document.createElement('td');
+//             const abc1 = document.createElement('a');
+//             abc.type = 'submit';
+//             abc1.textContent = 'Delete';
+
+//             abc1.addEventListener('click', () => {
+//                 localStorage.setItem("categoryId", JSON.stringify(category._id)); 
+//                 const URL12 = `http://localhost:8000/api/category/${category._id}/${userId}`;
+
+//                 const options = {
+//                     method: 'DELETE',
+//                     headers: {
+//                         'Content-Type': 'application/json',
+//                         'Authorization' : `Bearer ${token}`
+//                     },
+                    
+//                 }
+                
+//                 fetch(URL12, options)
+//                   .then(response => {
+//                     return response.json();
+//                   })
+//                   .then(data => {
+//                       console.log(data)
+//                   })
+
+//                 window.location.pathname = '/client/admin/admin.html'
+
+//             })
+//             td4.appendChild(abc1);
+
+//             tr.appendChild(td)
+//             tr.appendChild(td1)
+//             tr.appendChild(td2)
+//             tr.appendChild(td3)
+//             tr.appendChild(td4)
+
+//             panel.appendChild(tr);
+//         })
+//     })
+// }

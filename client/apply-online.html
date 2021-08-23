@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Edumart - Educational Template</title>
+
+    <!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/select2/css/select2.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/iconmoon/css/iconmoon.css" rel="stylesheet">
+    <link href="assets/datepicker/css/datepicker.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body class="fill-bg">
+
+    <!-- ==============================================
+    ** Preloader **
+    =================================================== -->
+    <div id="loading">
+        <div class="element">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+    ** Apply Online **
+    =================================================== -->
+    <section class="login-wrapper register">
+        <div class="inner">
+            <div class="regiter-inner">
+                <div class="login-logo"> <a href="index-2.html"><img src="images/login-logo.png" class="img-responsive" alt=""></a> </div>
+                <div class="head-block">
+                    <h1>Apply Now</h1>
+                </div>
+                <div class="cnt-block">
+                    <form action="http://localhost:8000/api/register/create" enctype="multipart/form-data" method="POST" class="form-outer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="file" name="profilePic" placeholder="profile Image">
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 10px;">
+                            <div class="col-sm-6">
+                                <h6>1. In which class have you to take admission</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select" name="field1" style="padding-bottom: 5px;">
+                                    <option value="day_scholar">Day Scholar</option>
+                                    <option value="hosteller">hosteller</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 10px;">
+                            <div class="col-sm-6">
+                                <h6>2. Transfer Certificate submitted (Compusory for Std. I and above) Yes/No</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select" name="tc">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 10px;" >
+                            <div class="col-sm-6"  >
+                                <h6>3. Name of Student : </h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type='text' name="studentName" placeholder="Full Name" />
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h6>4. Date of Birth : </h6>
+                            </div>
+                            <div class="col-sm-6 clearfix">
+                                <div class="date">
+                                    <input type='text' class="datepicker" name="dob" placeholder="Date of birth" />
+                                    <span class="icon-calander-icon"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-sm-6">
+                                <h6>5. Weather : </h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select" name="weather">
+                                    <option value="Gen">GEN</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 10px;">
+                            <div class="col-sm-6">
+                                <h6>6. Applicant is my : </h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select" name="applicatIsMy">
+                                    <option value="Son">Son</option>
+                                    <option value="Daughter">Daughter</option>
+                                    <option value="Ward">Ward</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>(a) Father Details :</p> 
+                                <input type="text" placeholder="Name of Father" name="fatherName">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>.</p>
+                                <input type="text" placeholder="Qualification of Father" name="fatherQualification">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>(b) Mother Details :</p> 
+                                <input type="text" placeholder="Name of Mother" name="motherName">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>.</p>
+                                <input type="text" placeholder="Qualification of Mother" name="otherQualification">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>(c) Guardian Details :</p> 
+                                <input type="text" placeholder="Name of Guardian" name="guardianName">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>.</p>
+                                <input type="text" placeholder="Qualification of Guardian" name="guardianQualification">
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 10px;">
+                            <div class="col-sm-6">
+                                <h6>7. Transportation :</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select" style="padding-bottom: 5px;" name="transportation">
+                                    <option value="Self">Self</option>
+                                    <option value="Auto">Auto</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h6>8. Occupation of Parents/Guardian :</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="Occupation" name="occupationOfParets">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6 style="padding-bottom: 10px;">9. Mother Tounge :</h6>
+                                <input type="text" placeholder="Mother Tounge" name="motherTounge">
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 style="padding-bottom: 10px;"  >10. Religion :</h6>
+                                <input type="text" placeholder="Religion" name="religion">
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 style="padding-bottom: 10px;">11. Caste :</h6>
+                                <input type="text" placeholder="Caste">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 style="padding-bottom: 20px;">12. Home Address :</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p style="padding-bottom: 10px;">Village/Town :</p>
+                                <input type="text" name="town" placeholder="Village/Town">
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="padding-bottom: 10px;">Post :</p>
+                                <input type="text" name="post" placeholder="Post">
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="padding-bottom: 10px;">District :</p>
+                                <input type="text" name="district" placeholder="District">
+                            </div>
+                            <div class="col-sm-3">
+                                <p style="padding-bottom: 10px;">State :</p>
+                                <input type="text" name="state" placeholder="State">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h6 style="padding-bottom: 20px;">13. Full Local Address :</h6>
+                                <input type="text" placeholder="Enter Your Local Address" name="localAddress">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6 style="padding-bottom: 10px;">14. Mobile No. :</h6>
+                                <input type="text" placeholder="Phone No." name="phone">
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="col-left">
+                                    <h2>15. Gender</h2>
+                                    <ul class="select-opt clearfix">
+                                        <li>
+                                            <input id="f-option" name="gender" value="male" type="radio">
+                                            <label for="f-option">Male</label>
+                                            <div class="check"></div>
+                                        </li>
+                                        <li>
+                                            <input id="s-option" name="gender" value="female" type="radio">
+                                            <label for="s-option">Female</label>
+                                            <div class="check">
+                                                <div class="inside"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 style="padding-bottom: 10px;">16. Nationality :</h6>
+                                <input type="text" placeholder="Nationality" name="nationality">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h6>17. Does the Applicant have brother/sister studing in this school</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="select-opt clearfix">
+                                    <li>
+                                        <input id="y-option" name="field17" value="Yes" type="radio">
+                                        <label for="y-option">Yes</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input id="n-option" name="field17" value="No" type="radio">
+                                        <label for="n-option">No</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <p>(a) Name: </p>
+                                <input name="field17Name" type="text" placeholder="Full Name">
+                            </div>
+                            <div class="col-sm-3">
+                                <p>Class : </p>
+                                <input name="field17Class" type="text" placeholder="Class">
+                            </div>
+                            <div class="col-sm-3">
+                                <p>Roll No.: </p>
+                                <input name="field17Rollno" type="text" placeholder="Class">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6>18. Aadhar Card No. (attach copy of Aadhar)</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <input name="aadhar" type="text" placeholder="Aadhar">
+                            </div>
+                            <div class="col-sm-4">
+                                <input name="aadharImg" type="file" placeholder="AadharPdf">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6>19. Name of last institution</h6>
+                            </div>
+                            <div class="col-sm-8">
+                                <input name="lastSchool" type="text" placeholder="Last Institution">
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-bottom: 30px;" >
+                            <div class="col-sm-12">
+                                <h6>20. I agree to follow these following.</h6>
+                                <p>(a). I declare that the date of birth is correct and shall not ask for change in future.</p>
+                                <p>(b). I decalare that all other particulars are correct.</p>
+                                <p>(c). I agree to abide by rules and regulations of the school. I will extend full Co-operation to the proper-development of my child</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+                            <div class="col-sm-6">
+                                <input name="Email" type="text" placeholder="Email">
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="custom_select">
+                                    <option value="Program">Program</option>
+                                    <option value="Program">Program2</option>
+                                    <option value="Program">Program3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="custom_select">
+                                    <option value="How did you hear about us?">How did you hear about us?</option>
+                                    <option value="How did you hear about us?">How did you hear about us?</option>
+                                    <option value="How did you hear about us?">How did you hear about us?</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="date">
+                                    <input type='text' class="datepicker" placeholder="Graduation Year" />
+                                    <span class="icon-calander-icon"></span> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 clearfix">
+                                <div class="col-left">
+                                    <h2>Gender</h2>
+                                    <ul class="select-opt clearfix">
+                                        <li>
+                                            <input id="f-option" name="selector" type="radio">
+                                            <label for="f-option">Male</label>
+                                            <div class="check"></div>
+                                        </li>
+                                        <li>
+                                            <input id="s-option" name="selector" type="radio">
+                                            <label for="s-option">Female</label>
+                                            <div class="check">
+                                                <div class="inside"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-left">
+                                    <h2>Degree Received?</h2>
+                                    <ul class="select-opt clearfix">
+                                        <li>
+                                            <input id="y-option" name="selector" type="radio">
+                                            <label for="y-option">Yes</label>
+                                            <div class="check"></div>
+                                        </li>
+                                        <li>
+                                            <input id="n-option" name="selector" type="radio">
+                                            <label for="n-option">No</label>
+                                            <div class="check">
+                                                <div class="inside"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="col-left">
+                                    <h2>English is your primary language?</h2>
+                                    <ul class="select-opt clearfix">
+                                        <li>
+                                            <input id="z-option" name="selector" type="radio">
+                                            <label for="z-option">Yes</label>
+                                            <div class="check"></div>
+                                        </li>
+                                        <li>
+                                            <input id="o-option" name="selector" type="radio">
+                                            <label for="o-option">No</label>
+                                            <div class="check">
+                                                <div class="inside"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="button-outer">
+                            <button type="submit" class="btn" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/select2/js/select2.min.js"></script>
+    <script src="assets/datepicker/js/datepicker.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+
+</html>
