@@ -127,23 +127,7 @@ templateFooter.innerHTML = `
 <!-- End Footer Bottom -->
 
 </footer>
-<script type="text/javascript">
-    (function () {
-        var options = {
-            call   : " +917554919520" ,  // calling Number
-            facebook: "103743984353168", // Facebook page ID
-            whatsapp: "+916265356673&text= I'm Interested", // WhatsApp number
-            call_to_action: "Hi! I'm here to help you.", // Call to action
-            button_color: "#de0300", // Color of button
-            position: "right", // Position may be 'right' or 'left'
-            order: "call,facebook,whatsapp", // Order of buttons
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
+
 `
 
 document.body.appendChild(templateFooter.content);

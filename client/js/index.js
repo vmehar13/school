@@ -18,13 +18,13 @@ function listBanners() {
     .then(banner => {
         console.log(banner.banner1)
         const bn1 = document.querySelector('#bn1');
-        bn1.src = `http://localhost:8000/api/${banner.banner1}`
+        bn1.src = `/api/${banner.banner1}`
 
         const bn2 = document.querySelector('#bn2');
-        bn2.src = `http://localhost:8000/api/${banner.banner2}`
+        bn2.src = `/api/${banner.banner2}`
 
         const bn3 = document.querySelector('#bn3');
-        bn3.src = `http://localhost:8000/api/${banner.banner3}`
+        bn3.src = `/api/${banner.banner3}`
     })
 }
 
