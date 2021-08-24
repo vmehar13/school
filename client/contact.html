@@ -178,11 +178,11 @@
     <script type="text/javascript">
         (function () {
             var options = {
-                call   : " +917554919520" ,  // calling Number
+                call   : " +919873201515" ,  // calling Number
                 facebook: "103743984353168", // Facebook page ID
                 whatsapp: "+916265356673&text= I'm Interested", // WhatsApp number
                 call_to_action: "Hi! I'm here to help you.", // Call to action
-                button_color: "#de0300", // Color of button
+                button_color: "#4ab866", // Color of button
                 position: "right", // Position may be 'right' or 'left'
                 order: "call,facebook,whatsapp", // Order of buttons
             };
@@ -193,6 +193,22 @@
         })();
     </script>
 
+<script type="text/javascript">
+    (function () {
+        var options = {
+           
+            whatsapp: "+919873201515&text= I'm Interested", // WhatsApp number
+            call_to_action: "Hi! I'm here to help you.", // Call to action
+            button_color: "#de0300", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "whatsApp", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
     <!-- Scroll to top -->
     <a href="#" class="scroll-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
