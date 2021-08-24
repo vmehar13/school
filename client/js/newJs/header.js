@@ -70,15 +70,13 @@ template.innerHTML = `
             </form> -->
             <ul class="nav navbar-nav">
                 <li> <a href="index-2.html">Home</a></li>
-                <li> <a href="about.html">About</a></li>
-                <!-- <li class="dropdown"> <a data-toggle="dropdown" href="#">Our Courses <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li class="dropdown"> <a data-toggle="dropdown" href="#">About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="course-listing.html">course Listing</a></li>
-                        <li><a href="mba-marketing.html">MBA Marketing</a></li>
-                        <li><a href="mba-general.html">MBA General</a></li>
-                        <li><a href="mba-operations.html">MBA Operations</a></li>
+                        <li><a href="about.html">Aim Of School</a></li>
+                        <li><a href="director.html">Director's Pen</a></li>
+                        <li><a href="principal.html">Principal Desk</a></li>
                     </ul>
-                </li> -->
+                </li>
                 <li> <a href="">Fees Structure</a></li>
                 <li> <a href="gallery.html">Gallery</a></li>
                 <!-- <li class="dropdown"> <a data-toggle="dropdown" href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>

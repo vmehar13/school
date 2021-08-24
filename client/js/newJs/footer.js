@@ -9,8 +9,8 @@ templateFooter.innerHTML = `
                 <h3>About US</h3>
                 <ul>
                     <li><a href="#">Aim Of School</a></li>
-                    <li><a href="#">In Our Campus</a></li>
-                    <li><a href="#">Principal Desk</a></li>
+                    <li><a href="director.html">Director's Pen</a></li>
+                    <li><a href="principal.html">Principal Desk</a></li>
                     <li><a href="#">Rules Of School</a></li>
                     <li><a href="#">Admisson Form</a></li>
                 </ul>
@@ -40,7 +40,7 @@ templateFooter.innerHTML = `
                 <ul>
                     <li><a href="#">+91 98732 01515</a></li>
                     <li><a href="#">info@apspurnea.com</a></li>
-                    <li><a href="#">aps purnea</a></li>
+                    <li><a href="#">AS-SABEEL</a></li>
                     <li><a href="#">Line Bazar, Purnea</a></li>
                     <li><a href="#">Bihar - 854301</a></li>
                 </ul>
@@ -48,7 +48,7 @@ templateFooter.innerHTML = `
         </div>
         <div class="col-sm-3">
             <div class="footer-logo hidden-xs"><a href="index-2.html"><img src="images/footer-logo.png" class="img-responsive" alt=""></a></div>
-            <p>© 2020 <span>Aps-Sabeel</span>. All rights reserved</p>
+            <p>© 2020 <span>AS-SABEEL</span>. All rights reserved</p>
             <ul class="terms clearfix">
                 <li><a href="terms.html">TERMS OF USE</a></li>
                 <li><a href="privacy.html">PRIVACY POLICY</a></li>
