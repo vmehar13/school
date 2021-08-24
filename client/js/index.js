@@ -1,5 +1,5 @@
 
-const API_URL = "/api/banner/611b514a425b532a18dad041"
+const API_URL = "/api/banner/6124c4f252223203f4ef4efc"
 const panel = document.querySelector('.panel');
 
 

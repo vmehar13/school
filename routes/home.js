@@ -14,7 +14,7 @@ router.param('sliderId', getSliderById);
 var cpUpload = upload.fields([{ name: 'banner1', maxCount: 1 }, { name: 'banner2', maxCount: 1 }, { name: 'banner3', maxCount: 1 }])
 
 //create-route
-// router.post('/admin/banner/create/:userId', cpUpload , createBanner);
+router.post('/admin/banner/create/:userId', cpUpload , createBanner);
 
 //get
 router.get("/banner" , getAllBanner);

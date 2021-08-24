@@ -4,7 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 exports.createBanner = (req, res) => {
-
+    console.log(req.files)
     const home = new Home({
         _id: new mongoose.Types.ObjectId(),
         banner1: req.files.banner1[0].path,
