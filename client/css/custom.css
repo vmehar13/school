@@ -456,13 +456,13 @@ textarea:focus::placeholder{
 	padding: 0px;
 }
 .navbar-inverse {
-	background: #e83f33;
+	background: #4ab866;
 }
 .nav > li > a {
 	padding: 19px 26px;
 }
 .navbar-nav > li {
-	border-right: 1px #d3b3b3 solid;
+	border-right: 1px #5fc078 solid;
 }
 .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -499,7 +499,7 @@ textarea:focus::placeholder{
 	background: none;
 	border-radius: 0px;
 	box-shadow: none;
-	border-bottom: 1px #dca5a5 solid !important;
+	border-bottom: 1px #a5dcb3 solid !important;
 	border: none;
 	font-size: 12px;
 	color: #b4ddbd;
@@ -681,7 +681,7 @@ textarea:focus::placeholder{
 	color: #fff;
 }
 .btn.blue:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 .banner-outer .bx-wrapper .bx-pager {
 	bottom: 60px;
@@ -890,7 +890,7 @@ textarea:focus::placeholder{
 	color: #ff9600;
 }
 .about a.know-more:hover span {
-	color: #e83f33;
+	color: #4ab866;
 }
 
 /*-----------------------
@@ -1187,7 +1187,7 @@ textarea:focus::placeholder{
 }
 .how-study ul li:nth-child(2) .cnt-block h3:before, 
 .how-study ul li:nth-child(2) a.more:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 .how-study ul li:nth-child(3) .cnt-block h3:before, 
 .how-study ul li:nth-child(3) a.more:hover {
@@ -1236,7 +1236,7 @@ textarea:focus::placeholder{
 	top: 0px;
 	z-index: 1;
 	content: "";
-	background: #e83f33;
+	background: #4ab866;
 	opacity: 0.9;
 }
 .why-choose .container{
@@ -1259,7 +1259,7 @@ ul.our-strength li {
 	display: inline-block;
 	color: #fff;
 	text-align: center;
-	border-right: 1px #d39494 solid;
+	border-right: 1px #94d3a4 solid;
 }
 ul.our-strength li:last-child {
 	border: none;
@@ -1468,7 +1468,7 @@ ul.our-strength li .title {
 	transition: all 0.3s ease 0s;
 }
 .news-events a.know-more:hover span {
-	color: #e83f33;
+	color: #4ab866;
 }
 
 /*-----------------------
@@ -1544,7 +1544,7 @@ ul.our-strength li .title {
 	color: #fff;
 }
 .campus-tour ul.gallery li a.more {
-	background: #e83f33;
+	background: #4ab866;
 }
 .campus-tour ul.gallery li a:hover {
 	background: #2c97ea;
@@ -1918,7 +1918,7 @@ a.scroll-top {
 	display: none;
 	right: 20px;
 	bottom: 20px;
-	background-color: #e83f33;
+	background-color: #4ab866;
     z-index: 999;
 }
 a.scroll-top:hover {
@@ -2108,7 +2108,7 @@ a.scroll-top:hover {
     color: #f5731f;
 }
 .intro-sec a.know-more:hover span {
-    color: #e83f33;
+    color: #4ab866;
 }
 
 /*---------------------------
@@ -2137,7 +2137,7 @@ a.scroll-top:hover {
     color: #f5731f;
 }
 .popular-cources a.view-courses:hover span {
-    color: #e83f33;
+    color: #4ab866;
 }
 .popular-cources h3{
     display: block;
@@ -2259,7 +2259,7 @@ a.scroll-top:hover {
     font-size: 18px;
 }
 .wt-makes-different .left a.read-more:hover span {
-    color: #e83f33;
+    color: #4ab866;
 }
 .wt-makes-different .right{
     padding: 120px 0 0 60px;
@@ -2422,7 +2422,7 @@ ul.our-strength.opt2 li span {
 	color: #3f5044;
 }
 ul.our-strength.opt2 li .icon span {
-	color: #e83f33
+	color: #4ab866
 }
 ul.our-strength.opt2 li .title {
 	color: #9099a0;
@@ -2466,7 +2466,7 @@ ul.our-strength.opt2 li .title {
 	margin-top: -2px;
 }
 .about-video p a:hover {
-	color: #e83f33;
+	color: #4ab866;
 }
 .browse-teacher.grey-bg {
 	background: #f3f6f8;
@@ -2654,7 +2654,7 @@ a.download-pros .sm-txt, a.download-cert .sm-txt {
 }
 a.download-pros:hover, 
 a.download-cert:hover {
-	background-color: #e83f33;
+	background-color: #4ab866;
 }
 .select-course {
 	display: block;
@@ -2923,7 +2923,7 @@ ul.teachers-follow li:nth-child(3) a {
 	opacity: 0.5;
 }
 .enquire-now .enquire-btn:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 .cert-head {
 	display: block;
@@ -3007,7 +3007,7 @@ ul.cert-list li span {
 }
 .course-detail .duration.fee .detail {
 	font-size: 36px;
-	color: #e83f33;
+	color: #4ab866;
 }
 .course-detail .duration.fee .detail span {
 	padding-bottom: 10px;
@@ -3088,14 +3088,14 @@ ul.cert-list li span {
 .course-tab > li.active > a:hover, 
 .course-tab > li > a:hover {
 	background: none;
-	border-bottom: 2px #e83f33 solid !important;
-	color: #e83f33;
+	border-bottom: 2px #4ab866 solid !important;
+	color: #4ab866;
 }
 .course-tab > li.active > a span, 
 .course-tab > li.active > a:focus span, 
 .course-tab > li.active > a:hover span, 
 .course-tab > li > a:hover span {
-	color: #e83f33;
+	color: #4ab866;
 }
 .details-tab #curriculam, .details-tab #schedule {
 	background: #fff;
@@ -3330,7 +3330,7 @@ ul.cert-list li span {
 }
 .how-apply ul li:hover .icon-block, 
 .how-apply ul li.active .icon-block {
-	background: #b23e3e;
+	background: #3eb25c;
 }
 .how-apply ul li:hover .num, 
 .how-apply ul li.active .num {
@@ -3583,7 +3583,7 @@ ul.cert-list li span {
 	max-width: 360px;
 	margin: 96px 0;
 	float: right;
-	background: #e83f33;
+	background: #4ab866;
 	color: #fff;
 	box-shadow: 0 0 30px #bfcdbf;
 	position: relative;
@@ -3608,7 +3608,7 @@ ul.cert-list li span {
 	font-family: 'icomoon' !important;
 	font-size: 22px;
 	content: "\e918";
-	color: #dba4a4;
+	color: #a4dbb2;
 }
 .contact-detail .inner:nth-child(2):before {
 	width: 19px;
@@ -3639,7 +3639,7 @@ ul.cert-list li span {
 	text-transform: uppercase;
 }
 .contact-detail .inner p {
-	color: #e59b9b;
+	color: #9be5ad;
 	line-height: 20px;
 }
 .contact-detail .inner a {
@@ -3709,7 +3709,7 @@ ul.cert-list li span {
 	margin: 30px 0 0 0;
 	font-size: 13px;
 	color: #fff;
-	background: #e83f33;
+	background: #4ab866;
 	border-radius: 4px;
 }
 .msg-success:after {
@@ -3782,7 +3782,7 @@ ul.blog-listing > li .read-more span {
 	transition: all 0.3s ease 0s;
 }
 ul.blog-listing > li .read-more:hover span {
-	color: #e83f33;
+	color: #4ab866;
 }
 ul.post-detail {
 	display: block;
@@ -3853,7 +3853,7 @@ ul.post-detail li .label {
 	transition: all 0.3s ease 0s;
 }
 .search-block .search:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 .blog-right h3 {
 	padding-bottom: 16px;
@@ -4009,7 +4009,7 @@ ul.tags-list li a {
 	border-radius: 2px;
 }
 ul.tags-list li a:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 
 /* ================================================== */
@@ -4069,7 +4069,7 @@ ul.blog-listing.detail > li {
 	color: #fff;
 }
 .blog-left ul.follow-us li a:hover {
-	background: #e83f33;
+	background: #4ab866;
 	border-color: #1c7bc3;
 }
 .blog-left .comments-wrapper {
@@ -4362,7 +4362,7 @@ ul.faq-listing li h2 {
 	text-transform: uppercase;
 }
 .login-wrapper .btn:hover {
-	background: #e83f33;
+	background: #4ab866;
 }
 .login-wrapper .register {
 	display: block;
@@ -4393,7 +4393,7 @@ ul.faq-listing li h2 {
 	color: #6e7e83;
 }
 .login-wrapper a.forgot:hover {
-	color: #e83f33;
+	color: #4ab866;
 }
 .login-wrapper a.forgot span {
 	display: inline-block;
@@ -4408,7 +4408,7 @@ ul.faq-listing li h2 {
 	transition: all 0.3s ease 0s;
 }
 .login-wrapper a.forgot:hover span {
-	background: #e83f33;
+	background: #4ab866;
 }
 .login-wrapper .login-footer {
 	padding: 16px 20px;
@@ -4459,7 +4459,7 @@ ul.faq-listing li h2 {
 	top: 3px;
 	left: 3px;
 	line-height: 0.8;
-	color: #e83f33;
+	color: #4ab866;
 	transition: all .2s;
 }
 /* checked mark aspect changes */
@@ -4603,7 +4603,7 @@ ul.gallery-filter li:after {
 	bottom: -2px;
 	right: 0px;
 	content: "";
-	background: #e83f33;
+	background: #4ab866;
 	color: #4f4a4a;
 	transition: all 0.5s ease 0s;
 }
@@ -4670,7 +4670,7 @@ ul.news-listing > li .read-more span {
 	transition: all 0.3s ease 0s;
 }
 ul.news-listing > li .read-more:hover span {
-	color: #e83f33;
+	color: #4ab866;
 }
 .news-wrapper ul.post-detail {
 	padding-bottom: 10px;
@@ -4803,7 +4803,7 @@ ol.ord-listing li:before {
 	content: counter(li);
 	counter-increment: li;
 	color: #fff;
-	background: #e83f33;
+	background: #4ab866;
 	border-radius: 50%;
 	font-size: 12px;
 	font-weight: 700;
@@ -5062,7 +5062,7 @@ a.btn-circle {
 	color: #fff;
 }
 a.btn-circle.more {
-	background: #e83f33;
+	background: #4ab866;
 }
 a.btn-circle.plus {
 	background: #2c97ea;

@@ -8,11 +8,11 @@ templateFooter.innerHTML = `
             <div class="foot-nav">
                 <h3>About US</h3>
                 <ul>
-                    <li><a href="#">Aim Of School</a></li>
+                    <li><a href="about.html">Aim Of School</a></li>
                     <li><a href="director.html">Director's Pen</a></li>
                     <li><a href="principal.html">Principal Desk</a></li>
-                    <li><a href="#">Rules Of School</a></li>
-                    <li><a href="#">Admisson Form</a></li>
+                 <!---   <li><a href="#">Rules Of School</a></li> --->
+                    <li><a href="apply-online.html">Admisson Form</a></li>
                 </ul>
             </div>
             <div class="foot-nav">
@@ -98,27 +98,8 @@ templateFooter.innerHTML = `
             </div>
             <div class="col-sm-4">
                 <div class="instagram">
-                    <h3>@INSTAGRAM</h3>
-                    <ul class="clearfix">
-                        <li><a href="#">
-                                <figure><img src="images/insta-img1.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                        <li><a href="#">
-                                <figure><img src="images/insta-img2.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                        <li><a href="#">
-                                <figure><img src="images/insta-img3.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                        <li><a href="#">
-                                <figure><img src="images/insta-img4.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                        <li><a href="#">
-                                <figure><img src="images/insta-img5.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                        <li><a href="#">
-                                <figure><img src="images/insta-img6.jpg" class="img-responsive" alt=""></figure>
-                            </a></li>
-                    </ul>
+                    <h3>Design By - Satya Kabir E-Solutions</h3>
+                    
                 </div>
             </div>
         </div>
