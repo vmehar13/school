@@ -69,18 +69,18 @@
                   <!-- User Menu-->
                   <li class="dropdown">
                      <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                        <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span>
-                        <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span>
+                        <!-- <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span> -->
+                        <span>Account <i class=" icofont icofont-simple-down"></i></span>
 
                      </a>
                      <ul class="dropdown-menu settings-menu">
-                        <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
+                        <!-- <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
                         <li><a href="#"><i class="icon-user"></i> Profile</a></li>
                         <li><a href="#"><i class="icon-envelope-open"></i> My Messages</a></li>
                         <li class="p-0">
                            <div class="dropdown-divider m-0"></div>
                         </li>
-                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
+                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li> -->
                         <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
 
                      </ul>
@@ -146,35 +146,37 @@
             <!-- Sidebar Menu-->
             <ul class="sidebar-menu">
                 
-
+               <li class="active treeview">
+               <a class="waves-effect waves-dark" href="register.html">
+                   <i class="icon-list"></i><span>Dashboard</span>
+               </a>                
+                </li>
                 <li class="treeview">
-                  <li class="treeview">
-                     <a class="waves-effect waves-dark" href="register.html">
-                         <i class="icon-list"></i><span>Registrations</span>
-                     </a>                
-                 </li>
-                 <li class="treeview">
-                     <a class="waves-effect waves-dark" href="slider.html">
-                         <i class="icon-list"></i><span>Slider</span>
-                     </a>                
-                 </li>
- 
-                 <li class="treeview">
-                     <a class="waves-effect waves-dark" href="slider2.html">
-                         <i class="icon-list"></i><span>Slider 2</span>
-                     </a>                
-                 </li>
- 
-                 <li class="active treeview">
-                   <a class="waves-effect waves-dark" href="contact.html">
-                       <i class="icon-list"></i><span>Contacts</span>
-                   </a>                
+                    <a class="waves-effect waves-dark" href="register.html">
+                        <i class="icon-list"></i><span>Registrations</span>
+                    </a>                
+                </li>
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="slider.html">
+                        <i class="icon-list"></i><span>Slider</span>
+                    </a>                
+                </li>
+                <li class="treeview">
+                  <a class="waves-effect waves-dark" href="slider2.html">
+                      <i class="icon-list"></i><span>Slider 2</span>
+                  </a>                
+              </li>
+                <li class="treeview">
+                  <a class="waves-effect waves-dark" href="contact.html">
+                      <i class="icon-list"></i><span>Contacts</span>
+                  </a>                
+              </li>
+              <li class="treeview">
+               <a class="waves-effect waves-dark" href="galleryCategory.html">
+                   <i class="icon-list"></i><span>Gallery</span>
+               </a>                
                </li>
-               <li class="treeview">
-                 <a class="waves-effect waves-dark" href="galleryCategory.html">
-                     <i class="icon-list"></i><span>Gallery</span>
-                 </a>                
-             </li>
+
             </ul>
          </section>
       </aside>
@@ -417,16 +419,16 @@
             <div class="row">
                <div class="col-sm-12 p-0">
                   <div class="main-header">
-                     <h4>Table</h4>
+                     <h4>Register</h4>
                      <ol class="breadcrumb breadcrumb-title breadcrumb-arrow">
                         <li class="breadcrumb-item">
                            <a href="index.html">
                               <i class="icofont icofont-home"></i>
                            </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#">Tables</a>
+                        <li class="breadcrumb-item"><a href="#">Register</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="basic-table.html">Basic Table</a>
+                        <li class="breadcrumb-item"><a href="basic-table.html">Registration Details</a>
                         </li>
                      </ol>
                   </div>
@@ -434,42 +436,7 @@
             </div>
             <!-- Header end -->
 
-            <!-- Tables start -->
-            <!-- Row start -->
-            <div class="row">
-               <div class="col-sm-12">
-                  <!-- Basic Table starts -->
-                  <div class="card">
-                     <div class="card-header">
-                        <h5 class="card-header-text">Contacts</h5> <br><br>
-                        <button type="button" class="btn btn-primary waves-effect waves-light"><a href="./createCategory.html">Create Category</a></button>
-                     </div>
-                     <div class="card-block">
-                        <div class="row">
-                           <div class="col-sm-12 table-responsive">
-                              <table class="table">
-                                 <thead>
-                                    <tr>
-                                       <th>#</th>
-                                       <th>Name</th>
-                                       <th>Email</th>
-                                       <th>Session</th>
-                                       <th>Phone</th>
-                                       <th>message</th>
-                                       <th>Class</th>
-                                    </tr>
-                                 </thead>
-                                 <tbody class="panel">
-                                    
-
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            
             <!-- Row end -->
             <!-- Tables end -->
          </div>
@@ -507,7 +474,6 @@
    <script src="assets/js/menu.min.js"></script>
 
    
-   <script src="./js/contact.js"></script>
 
 </body>
 

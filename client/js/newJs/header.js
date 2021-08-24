@@ -77,7 +77,7 @@ template.innerHTML = `
                         <li><a href="principal.html">Principal Desk</a></li>
                     </ul>
                 </li>
-                <li> <a href="">Fees Structure</a></li>
+                <li> <a href="fees-structure.html">Fees Structure</a></li>
                 <li> <a href="gallery.html">Gallery</a></li>
                 <!-- <li class="dropdown"> <a data-toggle="dropdown" href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
