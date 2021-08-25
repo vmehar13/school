@@ -18,13 +18,17 @@ function listBanners() {
     .then(banner => {
         console.log(banner.banner1)
         const bn1 = document.querySelector('#bn1');
-        bn1.src = `/api/${banner.banner1}`
+        bn1.setAttribute('style', `background: url(/api/${banner.banner1}) !important`);
+        // bn1.src = `/api/${banner.banner1}`
+        // bn1.style.background = 'url();'
 
         const bn2 = document.querySelector('#bn2');
-        bn2.src = `/api/${banner.banner2}`
+        // bn2.src = `/api/${banner.banner2}`
+        bn2.setAttribute('style', `background: url(/api/${banner.banner2}) !important`);
 
         const bn3 = document.querySelector('#bn3');
-        bn3.src = `/api/${banner.banner3}`
+        // bn3.src = `/api/${banner.banner3}`
+        bn3.setAttribute('style', `background: url(/api/${banner.banner3}) !important`);
     })
 }
 

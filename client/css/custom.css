@@ -586,7 +586,7 @@ textarea:focus::placeholder{
 }
 .banner-outer .slide3 {
 	background: url(../images/banner3.jpg) no-repeat center top / cover;
-} */
+}  */
 .banner-outer .content {
 	display: table-cell;
 	vertical-align: middle;
