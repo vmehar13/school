@@ -58,53 +58,16 @@ templateFooter.innerHTML = `
     </div>
 </div>
 <!-- End Footer Top -->
-<!-- Start Footer Bottom -->
-<div class="bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="connect-us">
-                    <h3>Connect with Us</h3>
-                    <ul class="follow-us clearfix">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="subscribe">
-                    <h3>Subscribe with Us</h3>
-                    <!-- Begin MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                        <form action="http://protechtheme.us16.list-manage.com/subscribe/post?u=cd5f66d2922f9e808f57e7d42&amp;id=ec6767feee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="enter your email address" required>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_cd5f66d2922f9e808f57e7d42_ec6767feee" tabindex="-1" value="">
-                                </div>
-                                <div class="clear">
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                </div>
-                            </div>
-                        </form>
+<div class="footer-area-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div style="text-align: center;">
+                            <p>&copy; 2021 Aps-Puernea Designed by <a target="_blank" href="http://www.satyakabir.com/">Satya Kabir E-solutions Pvt. Ltd.</a></p>
+                        </div>
+
                     </div>
-                    <!--End mc_embed_signup-->
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="instagram">
-                    <h3><a href="https://satyakabir.com/">Design By - Satya Kabir E-Solutions</a></h3>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+            </div> 
 <!-- End Footer Bottom -->
 
 </footer>
