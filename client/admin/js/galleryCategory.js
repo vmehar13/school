@@ -1,14 +1,8 @@
-const formGallery = document.getElementById('formGallery')
-
-
 let userId = JSON.parse(localStorage.getItem('userId'));
 let token = JSON.parse(localStorage.getItem('token'));
 
-change()
-
-function changes() {
-    form.action = `/api/create/${userId}`;
-}
+let gal = document.querySelector('.gal');
+gal.action = `/api/create/${userId}`;
 
 // listCategory();
 

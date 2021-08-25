@@ -22,7 +22,7 @@ function listGallery() {
 
                     const a = document.createElement('a');
                     a.className = 'galleryItem';
-                    a.href = `http://localhost:8000/api/${gallery.photo}`;
+                    a.href = `/api/${gallery.photo}`;
 
                         const span = document.createElement('span');
                         span.className = 'icon-enlarge-icon';
@@ -36,7 +36,7 @@ function listGallery() {
 
                     const img = document.createElement('img');
                     img.className = 'img-responsive';
-                    img.src = `http://localhost:8000/api/${gallery.photo}`;
+                    img.src = `/api/${gallery.photo}`;
 
                 figure.appendChild(img);
 
