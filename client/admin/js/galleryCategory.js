@@ -2,7 +2,7 @@ let userId = JSON.parse(localStorage.getItem('userId'));
 let token = JSON.parse(localStorage.getItem('token'));
 
 let gal = document.querySelector('.gal');
-gal.action = `/api/create/${userId}`;
+gal.action = `/api/gallery/create/${userId}`;
 
 // listCategory();
 
