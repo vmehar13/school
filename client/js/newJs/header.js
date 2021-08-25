@@ -33,7 +33,7 @@ template.innerHTML = `
             <div class="contact clearfix">
                 <ul class="hidden-xs">
                     <li> <span>Email</span> <a href="mailto:info@apspurnea.com">info@apspurnea.com</a> </li>
-                    <li> <span>Help-line No.</span> +91 98732 01515 </li>
+                    <li> <span>Help-line No.</span> +91 99347 95336 </li>
                 </ul>
                 <a href="apply-online.html" class="login">Apply Online <span class="icon-more-icon"></span>
                     

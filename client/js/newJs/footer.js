@@ -98,7 +98,7 @@ templateFooter.innerHTML = `
             </div>
             <div class="col-sm-4">
                 <div class="instagram">
-                    <h3>Design By - Satya Kabir E-Solutions</h3>
+                    <h3><a href="https://satyakabir.com/">Design By - Satya Kabir E-Solutions</a></h3>
                     
                 </div>
             </div>
