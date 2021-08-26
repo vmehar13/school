@@ -1,5 +1,6 @@
-let userId = JSON.parse(localStorage.getItem('userId'));
-let token = JSON.parse(localStorage.getItem('token'));
+let userId = getWithExpiry('userId');
+let token = getWithExpiry('token');
+console.log(userId)
 
 const API_URL = `/api/admin/register/${userId}`
 const panel = document.querySelector('.panel');
@@ -85,4 +86,16 @@ function listRegistrations() {
             panel.appendChild(tr);
         })
     })
+}
+
+function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    // if the item doesn't exist, return null
+    // if (!itemStr) {
+    //     return null
+    // }
+
+    const item = JSON.parse(itemStr)
+    return item.value
 }
