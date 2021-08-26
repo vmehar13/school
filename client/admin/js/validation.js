@@ -20,10 +20,11 @@ function getWithExpiry(key) {
     }
     return item.value
 }
-
-let userId1 = JSON.parse(localStorage.getItem('userId'));
+let userId = getWithExpiry('userId');
+let edrole = getWithExpiry('edrole')
+// let userId1 = JSON.parse(localStorage.getItem('userId'));
 // let token2 = JSON.parse(localStorage.getItem('token'));
-let edrole = JSON.parse(localStorage.getItem('edrole'));
+// let edrole = JSON.parse(localStorage.getItem('edrole'));
 
 if(edrole != 1){
     
