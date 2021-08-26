@@ -1,7 +1,12 @@
 const form = document.querySelector('.form');
 
-let userId = JSON.parse(localStorage.getItem('user'));
-let categoryId = JSON.parse(localStorage.getItem('categoryId'));
+// let userId = JSON.parse(localStorage.getItem('user'));
+// let categoryId = JSON.parse(localStorage.getItem('categoryId'));
+
+let userId = getWithExpiry('userId');
+let token = getWithExpiry('token');
+console.log(userId)
+
 
 
 const API_URL = `/api/admin/register/${userId}`;
@@ -37,3 +42,16 @@ form.addEventListener('submit', (e) => {
       // window.location = '/client/login.html'
       // window.location.pathname = '/client/quantam-lite/index.html'
 })
+
+
+function getWithExpiry(key) {
+  const itemStr = localStorage.getItem(key)
+
+  // if the item doesn't exist, return null
+  // if (!itemStr) {
+  //     return null
+  // }
+
+  const item = JSON.parse(itemStr)
+  return item.value
+}

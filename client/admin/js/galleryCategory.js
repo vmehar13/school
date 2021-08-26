@@ -1,5 +1,8 @@
-let userId = JSON.parse(localStorage.getItem('userId'));
-let token = JSON.parse(localStorage.getItem('token'));
+// let userId = JSON.parse(localStorage.getItem('userId'));
+// let token = JSON.parse(localStorage.getItem('token'));
+let userId = getWithExpiry('userId');
+let token = getWithExpiry('token');
+console.log(userId)
 
 let gal = document.querySelector('.gal');
 gal.action = `/api/gallery/create/${userId}`;
