@@ -18,7 +18,7 @@ template.innerHTML = `
              <!-----   <li><a href="register.html">Register</a></li> ---->
                 <li><a href="apply-online.html">Apply Online</a></li>
                 
-                <li><a href="faq2.html">FAQs</a></li>
+                <li><a href="#">FAQs</a></li>
             </ul>
            
         </div>
@@ -95,7 +95,7 @@ template.innerHTML = `
                         <li class="hidden-xs"><a href="generic-ui.html">Generic UI</a></li>
                     </ul>
                 </li> -->
-                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="contact.html">Add Us</a></li>
             </ul>
         </div>
     </div>
