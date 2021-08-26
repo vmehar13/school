@@ -28,7 +28,7 @@
 let edrole = JSON.parse(localStorage.getItem('edrole'));
 console.log(edrole.value)
 
-if(edrole != 1){
+if(edrole.value != 1){
     
     window.location.pathname = 'client/admin/error403.html';
 }
