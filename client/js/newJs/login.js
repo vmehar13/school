@@ -40,9 +40,9 @@ form.addEventListener('submit', (e) => {
       .then(data => {
         console.log(data)
         if (typeof window !== "undefined") {
-          setWithExpiry("token", data.token, 5000)
-          setWithExpiry("userId", data.user._id, 5000)
-          setWithExpiry("edrole", data.user.role, 5000)
+          setWithExpiry("token", data.token, 500000)
+          setWithExpiry("userId", data.user._id, 500000)
+          setWithExpiry("edrole", data.user.role, 500000)
           // localStorage.setItem("token", JSON.stringify(data.token));
           // localStorage.setItem("userId", JSON.stringify(data.user._id));
           // localStorage.setItem("edrole", JSON.stringify(data.user.role));
