@@ -68,7 +68,7 @@ template.innerHTML = `
                 <input type="text" placeholder="Search Now" class="form-control">
                 <button class="search-btn"><span class="icon-search-icon"></span></button>
             </form> -->
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" style="margin-left: 22%">
                 <li> <a href="index-2.html">Home</a></li>
                 <li class="dropdown"> <a data-toggle="dropdown" href="#">About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
