@@ -1,4 +1,3 @@
-const form = document.querySelector('.form');
 function getWithExpiry(key) {
     const itemStr = localStorage.getItem(key)
 
@@ -22,6 +21,7 @@ function getWithExpiry(key) {
 let userId = getWithExpiry('userId'); 
 let token = getWithExpiry('token');
 
+const form = document.querySelector('.form');
 
 // let userId = JSON.parse(localStorage.getItem('userId'));
 // let token = JSON.parse(localStorage.getItem('token'));
