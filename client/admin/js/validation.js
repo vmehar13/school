@@ -21,21 +21,20 @@
 //     return item.value
 // }
 // let userId = getWithExpiry('userId');
-// let edrole = getWithExpiry('edrole')
+let edrole = getWithExpiry('edrole')
+let role = edrole.value;
 
 // let userId1 = JSON.parse(localStorage.getItem('userId'));
 // let token2 = JSON.parse(localStorage.getItem('token'));
-// function check(){
-//     console.log('working')
-//     if(edrole.value != 1){
-//         console('working1');
-    
-//         window.location.pathname = 'client/admin/error403.html';
-//     }
-// }
-// let edrole = JSON.parse(localStorage.getItem('edrole'));
+function check(){
+    console.log('working')
+    if(role != 1 || role == undefined || role == null || role != Number){
+        window.location.pathname = 'client/admin/error403.html';
+    }
+}
+let edrole = JSON.parse(localStorage.getItem('edrole'));
 
-// check();
+check();
 
 
 function deleteItem() {

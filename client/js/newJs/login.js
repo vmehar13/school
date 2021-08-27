@@ -47,9 +47,9 @@ form.addEventListener('submit', (e) => {
           // localStorage.setItem("userId", JSON.stringify(data.user._id));
           // localStorage.setItem("edrole", JSON.stringify(data.user.role));
 
-          window.location = '/client/login.html'
+          window.location = '/login.html'
 
-          window.location.pathname = 'client/admin/dashboard.html';
+          window.location.pathname = '/admin/dashboard.html';
 
         }
         
