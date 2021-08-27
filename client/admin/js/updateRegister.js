@@ -1,15 +1,14 @@
 const form = document.querySelector('.form');
-
-// let userId = JSON.parse(localStorage.getItem('user'));
-// let categoryId = JSON.parse(localStorage.getItem('categoryId'));
-
 let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
-console.log(userId)
-
-
-
 const API_URL = `/api/admin/register/${userId}`;
+
+const profilePic = document.querySelector('#input-profilePic');
+const field1 = document.querySelector('#input-field1');
+const tc = document.querySelector('#input-tc');
+const studentName = document.querySelector('#input-studentName');
+const dob = document.querySelector('#input-dob');
+const weather = document.querySelector('#input-weather')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

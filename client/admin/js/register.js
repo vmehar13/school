@@ -72,7 +72,7 @@ function listRegistrations() {
                       console.log(data)
                   })
 
-                window.location.pathname = '/client/admin/admin.html'
+                window.location.pathname = '/admin/updateRegister.html'
 
             })
             td4.appendChild(abc1);
