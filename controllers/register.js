@@ -72,7 +72,11 @@ exports.createRegister = (req, res) => {
                 error: "REGISTER UNABLE to save in DB"
             })
         }
-        res.json(register);
+        // res.json(register);
+        res.write(`
+            <h1>Your Request Sumbitted Successfullty</h1>
+            <a href="index.html">sdsad</a>
+        `)
     })
 }
 
