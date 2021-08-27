@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="cnt-block">
-                    <form action="/api/register/create" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
+                    <form action="/api/register/create" onsubmit="return false" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
                         <div class="row">
                             <div class="col-sm-12">
                                 <input type="file" name="profilePic" placeholder="profile Image">
@@ -417,22 +417,24 @@
                             </div>
                         </div> -->
                         <div class="button-outer">
-                            <button type="submit" class="btn" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
+                            <button type="submit" class="btn" id="applyBtn" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <script>
+    <!-- <script>
         const applyForm = document.getElementById('apply-form');
-        applyForm.addEventListener('submit', function(e) {
-       e.preventDefault();
-       return false;
+        const applyBtn = document.getElementById('applyBtn');
+        applyBtn.addEventListener('click', function(e) {
+            applyForm.submit();
+        return false;
+        e.preventDefault()
 })
 
         
-    </script>
+    </script> -->
     <!-- Optional JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
