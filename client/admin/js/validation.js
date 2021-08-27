@@ -25,22 +25,25 @@
 
 // let userId1 = JSON.parse(localStorage.getItem('userId'));
 // let token2 = JSON.parse(localStorage.getItem('token'));
-function check(){
-    console.log('working')
-    if(edrole.value != 1){
-        console('working1');
+// function check(){
+//     console.log('working')
+//     if(edrole.value != 1){
+//         console('working1');
     
-        window.location.pathname = 'client/admin/error403.html';
-    }
-}
-let edrole = JSON.parse(localStorage.getItem('edrole'));
+//         window.location.pathname = 'client/admin/error403.html';
+//     }
+// }
+// let edrole = JSON.parse(localStorage.getItem('edrole'));
 
-check();
+// check();
 
 
 function deleteItem() {
     localStorage.removeItem("userId");
     localStorage.removeItem("token");
     localStorage.removeItem("edrole");
+
+    window.location.pathname = '/index-2.html';
+
 
   }
