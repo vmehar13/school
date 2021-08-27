@@ -26,7 +26,8 @@ function getWithExpiry(key) {
 
     // if the item doesn't exist, return null
     if (!itemStr) {
-        return null
+    window.location.pathname = '/index-2.html';
+        
     }
 
     const item = JSON.parse(itemStr)
