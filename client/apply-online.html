@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="cnt-block">
-                    <form action="/api/register/create" onsubmit="return false" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
+                    <form action="/api/register/create" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
                         <div class="row">
                             <div class="col-sm-12">
                                 <input type="file" name="profilePic" placeholder="profile Image">
@@ -424,17 +424,27 @@
             </div>
         </div>
     </section>
-    <!-- <script>
-        const applyForm = document.getElementById('apply-form');
-        const applyBtn = document.getElementById('applyBtn');
-        applyBtn.addEventListener('click', function(e) {
-            applyForm.submit();
-        return false;
-        e.preventDefault()
-})
+    <script>
+//         const applyForm = document.getElementById('apply-form');
+//         const applyBtn = document.getElementById('applyBtn');
+//         applyForm.addEventListener('sumbit', function(e) {
+//         e.preventDefault();
+//         fetch()
+// })
 
+$('#apply-form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        url: "/api/register/create",
+        type: 'post',
+        data:$('#apply-form').serialize(),
+        success:function(){
+            // Whatever you want to do after the form is successfully submitted
+        }
+    });
+});
         
-    </script> -->
+    </script>
     <!-- Optional JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
