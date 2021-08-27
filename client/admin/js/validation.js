@@ -25,13 +25,17 @@
 
 // let userId1 = JSON.parse(localStorage.getItem('userId'));
 // let token2 = JSON.parse(localStorage.getItem('token'));
+function check(){
+    if(edrole.value != 1){
+    
+        window.location.pathname = 'client/admin/error403.html';
+    }
+}
 let edrole = JSON.parse(localStorage.getItem('edrole'));
 console.log(edrole.value)
 
-if(edrole.value != 1){
-    
-    window.location.pathname = 'client/admin/error403.html';
-}
+check();
+
 
 function deleteItem() {
     localStorage.removeItem("userId");
