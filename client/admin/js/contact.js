@@ -4,11 +4,7 @@
 let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
 
-if(edrole == undefined || edrole != 1){
-              
-    window.location = '/admin/contact.html'
-    window.location.pathname = '/admin/error403.html'
-    }
+
 
 const API_URL = `/api/admin/contact/${userId}`
 const panel = document.querySelector('.panel');
@@ -71,7 +67,8 @@ function getWithExpiry(key) {
 
     // if the item doesn't exist, return null
     if (!itemStr) {
-        return null
+    window.location.pathname = '/admin/error403.html';
+        
     }
 
     const item = JSON.parse(itemStr)

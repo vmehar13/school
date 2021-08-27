@@ -93,7 +93,8 @@ function getWithExpiry(key) {
 
     // if the item doesn't exist, return null
     if (!itemStr) {
-        return null
+    window.location.pathname = '/admin/error403.html';
+        
     }
 
     const item = JSON.parse(itemStr)

@@ -26,7 +26,7 @@ function getWithExpiry(key) {
 
     // if the item doesn't exist, return null
     if (!itemStr) {
-    window.location.pathname = '/index-2.html';
+    window.location.pathname = '/admin/error403.html';
         
     }
 
