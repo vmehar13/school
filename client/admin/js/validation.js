@@ -34,7 +34,6 @@ function check(){
     }
 }
 let edrole = JSON.parse(localStorage.getItem('edrole'));
-console.log(edrole.value)
 
 check();
 
