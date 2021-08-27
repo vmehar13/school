@@ -34,7 +34,7 @@
 // }
 // let edrole = JSON.parse(localStorage.getItem('edrole'));
 
-check();
+// check();
 
 
 function deleteItem() {

@@ -3,7 +3,12 @@
 
 let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
-console.log(userId)
+
+if(edrole == undefined || edrole != 1){
+              
+    window.location = '/admin/contact.html'
+    window.location.pathname = '/admin/error403.html'
+    }
 
 const API_URL = `/api/admin/contact/${userId}`
 const panel = document.querySelector('.panel');
