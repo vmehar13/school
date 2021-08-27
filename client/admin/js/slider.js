@@ -1,5 +1,17 @@
 let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
+let edrole = getWithExpiry('edrole');
+
+function check(){
+    console.log('working')
+    if(edrole != 1){
+        console('working1');
+    
+        window.location.pathname = 'client/admin/error403.html';
+    }
+}
+
+check();
 console.log(userId)
 
 const form = document.querySelector('.form');
