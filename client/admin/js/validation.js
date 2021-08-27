@@ -32,7 +32,7 @@ function check(){
         window.location.pathname = 'client/admin/error403.html';
     }
 }
-let edrole = JSON.parse(localStorage.getItem('edrole'));
+// let edrole = JSON.parse(localStorage.getItem('edrole'));
 
 check();
 
