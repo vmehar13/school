@@ -70,7 +70,7 @@ template.innerHTML = `
             </form> -->
             <ul class="nav navbar-nav" style="margin-left: 22%">
                 <li> <a href="index-2.html">Home</a></li>
-                <li class="dropdown"> <a data-toggle="dropdown" href="#">About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li class="dropdown"> <a data-toggle="dropdown" href="#">About Us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="about.html">Aim Of School</a></li>
                         <li><a href="director.html">Director's Pen</a></li>
@@ -95,7 +95,7 @@ template.innerHTML = `
                         <li class="hidden-xs"><a href="generic-ui.html">Generic UI</a></li>
                     </ul>
                 </li> -->
-                <li> <a href="contact.html">Add Us</a></li>
+                <li> <a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
