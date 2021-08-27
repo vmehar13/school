@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="cnt-block">
-                    <form action="/api/register/create" enctype="multipart/form-data" method="POST" class="form-outer">
+                    <form action="/api/register/create" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
                         <div class="row">
                             <div class="col-sm-12">
                                 <input type="file" name="profilePic" placeholder="profile Image">
@@ -424,7 +424,15 @@
             </div>
         </div>
     </section>
+    <script>
+        const applyForm = document.getElementById('apply-form');
+        applyForm.addEventListener('submit', function(e) {
+       e.preventDefault();
+       return false;
+})
 
+        
+    </script>
     <!-- Optional JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

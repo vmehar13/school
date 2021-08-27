@@ -1,5 +1,10 @@
 const contactForm = document.querySelector('#contact');
 const API_URL_CONTACT = '/api/contact/create';
+const myBtn = document.querySelector('#myBtn');
+var modal = document.getElementById("myModal");
+function popUp() {
+    modal.style.display = "block";
+  }
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -28,6 +33,7 @@ contactForm.addEventListener('submit', (e) => {
         }
     }).then(res => res.json())
     .then(
-        alert("your request sumbited succesfully")
+        // alert("your request sumbited succesfully")
+        popUp()
     )
 });

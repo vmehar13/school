@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <title>ApsPurnea - AS-Sabeel Public School</title>
 
-
+    <link href="./admin/css/pop-up.css" rel="stylesheet">
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
@@ -83,33 +83,46 @@
                         <input name="fullName" type="text" placeholder="Full Name" required>
                     </div>
                     <div class="col-sm-6">
-                        <input name="email" type="text" placeholder="Parent Email">
+                        <input name="email" type="text" placeholder="Parent Email" required>
                     </div>
                 </div>
                 <div class="row input-row">
                     <div class="col-sm-6">
-                        <input name="admission_session" type="text" placeholder="Admission Session: Example 2021-2022">
+                        <input name="admission_session" type="text" placeholder="Admission Session: Example 2021-2022" required>
                     </div>
                     <div class="col-sm-6">
-                        <input name="phone" type="text" placeholder="Phone Number">
+                        <input name="phone" type="text" placeholder="Phone Number" required>
                     </div>
                 </div>
                 <div class="row input-row">
                     <div class="col-sm-6">
-                        <input name="message" type="text" placeholder="Message">
+                        <input name="message" type="text" placeholder="Message" required>
                     </div>
                     <div class="col-sm-6">
-                        <input name="admission_class" type="text" placeholder="Admission Class">
+                        <input name="admission_class" type="text" placeholder="Admission Class" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                        <!-- <input type="submit" class="btn" value="Apply Now">  -->
-                        <button class="btn" type="submit">Apply Now <span class="icon-more-icon"></span></button>
+                        <button class="btn" id="" type="submit">Apply Now <span class="icon-more-icon"></span></button>
                         <div class="msg"></div>
                     </div>
                 </div>
             </form>
+            <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><a href="index-2.html">&times;</a></span>
+    <p>Your request submitted succesfully..</p>
+  </div>
+
+</div>
         </div>
     </section>
 
@@ -199,6 +212,15 @@
     <script src="js/custom.js"></script>
 
     <script src="./js/newJs/contact_us.js"></script>
+    <script src="./admin/js/pop-up.js"></script>
+
+    <!-- <script>
+        const contactBtn = document.querySelector('#contact-btn');
+        contactBtn.submit(function(e) {
+       e.preventDefault();
+       return false;
+        });
+    </script> -->
 </body>
 
 
