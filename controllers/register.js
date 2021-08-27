@@ -77,6 +77,7 @@ exports.createRegister = (req, res) => {
             <h1>Your Request Sumbitted Successfullty</h1>
             <a href="index.html">sdsad</a>
         `)
+        res.send();
     })
 }
 
