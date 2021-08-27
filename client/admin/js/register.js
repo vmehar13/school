@@ -53,7 +53,7 @@ function listRegistrations() {
 
             abc1.addEventListener('click', () => {
                 localStorage.setItem("categoryId", JSON.stringify(category._id)); 
-                const URL12 = `http://localhost:8000/api/category/${category._id}/${userId}`;
+                const URL12 = `/api/category/${category._id}/${userId}`;
 
                 const options = {
                     method: 'DELETE',

@@ -50,10 +50,10 @@
 
 <body class="sidebar-mini fixed">
    <div class="wrapper">
-      <!-- <div class="loader-bg">
+      <div class="loader-bg">
          <div class="loader-bar">
          </div>
-      </div> -->
+      </div>
       <!-- Navbar-->
       <header class="main-header-top hidden-print">
          <a href="index.html" class="logo"><img class="img-fluid able-logo" src="assets/images/logo.png" alt="Theme-logo"></a>
@@ -145,35 +145,31 @@
             <!-- Sidebar Menu-->
             <ul class="sidebar-menu">
                 
-
-               <li class="active treeview">
+               <li class="treeview">
                   <a class="waves-effect waves-dark" href="register.html">
-                      <i class="icon-list"></i><span>Registrations</span>
+                      <i class="icon-speedometer"></i><span>Dashboard</span>
                   </a>                
-              </li>
-              <li class="treeview">
-                  <a class="waves-effect waves-dark" href="slider.html">
-                      <i class="icon-list"></i><span>Slider</span>
+                   </li>
+                   <li class="active treeview">
+                       <a class="waves-effect waves-dark" href="register.html">
+                           <i class="icon-list"></i><span>Registrations</span>
+                       </a>                
+                   </li>
+                   <li class="treeview">
+                       <a class="waves-effect waves-dark" href="slider.html">
+                           <i class="icon-list"></i><span>Slider</span>
+                       </a>                
+                   </li>
+                   <li class="treeview">
+                     <a class="waves-effect waves-dark" href="contact.html">
+                         <i class="icon-list"></i><span>Contacts</span>
+                     </a>                
+                 </li>
+                 <li class="treeview">
+                  <a class="waves-effect waves-dark" href="galleryCategory.html">
+                      <i class="icon-list"></i><span>Gallery</span>
                   </a>                
-              </li>
-
-              <li class="treeview">
-                  <a class="waves-effect waves-dark" href="slider2.html">
-                      <i class="icon-list"></i><span>Slider 2</span>
-                  </a>                
-              </li>
-
-              <li class="treeview">
-                <a class="waves-effect waves-dark" href="contact.html">
-                    <i class="icon-list"></i><span>Contacts</span>
-                </a>                
-            </li>
-            <li class="treeview">
-              <a class="waves-effect waves-dark" href="galleryCategory.html">
-                  <i class="icon-list"></i><span>Gallery</span>
-              </a>                
-          </li>
-
+                  </li>
             </ul>
          </section>
       </aside>
@@ -441,7 +437,7 @@
                   <div class="card">
                      <div class="card-header">
                         <h5 class="card-header-text">Registrations</h5> <br><br>
-                        <button type="button" class="btn btn-primary waves-effect waves-light"><a href="./createCategory.html">Create Registration</a></button>
+                        <!-- <button type="button" class="btn btn-primary waves-effect waves-light"><a href="./createCategory.html">Create Registration</a></button> -->
                      </div>
                      <div class="card-block">
                         <div class="row">
@@ -501,7 +497,18 @@
    <script type="text/javascript" src="assets/js/main.min.js"></script>
    <script type="text/javascript" src="assets/pages/elements.js"></script>
    <script src="assets/js/menu.min.js"></script>
-
+   <script>
+      var $window = $(window);
+      var nav = $('.fixed-button');
+      $window.scroll(function(){
+          if ($window.scrollTop() >= 200) {
+             nav.addClass('active');
+          }
+          else {
+             nav.removeClass('active');
+          }
+      });
+      </script>
    
    <script src="./js/register.js"></script>
 

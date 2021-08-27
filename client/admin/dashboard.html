@@ -6,9 +6,19 @@
 
    
    
+   <!-- Meta -->
    <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Quantum Able Bootstrap 4 Admin Dashboard Template by codedthemes">
+   <meta name="keywords" content="appestia, Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+   <meta name="author" content="codedthemes">
+
+
+   <link rel="stylesheet" type="text/css" href="./assets/css/user.css">
+
+
+
    <!-- Favicon icon -->
    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -28,20 +38,13 @@
    <!-- Required Fremwork -->
    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-   <!-- Chartlist chart css -->
-   <link rel="stylesheet" href="assets/plugins/chartist/dist/chartist.css" type="text/css" media="all">
-
-   <!-- Weather css -->
-   <link href="assets/css/svg-weather.css" rel="stylesheet">
-
-
    <!-- Style.css -->
    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
    <!-- Responsive.css-->
    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-   <!-- <script src="./js/validation.js"></script> -->
+   <script src="./js/validation.js"></script>
 
 
 </head>
@@ -58,106 +61,27 @@
          <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
             <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a>
-            <ul class="top-nav lft-nav">
-               <li>
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <i class="ti-files"> </i><span> Files</span>
-                  </a>
-               </li>               
-               <li class="dropdown">
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <span>Dropdown </span><i class=" icofont icofont-simple-down"></i>
-                  </a>
-                  <ul class="dropdown-menu settings-menu">
-                     <li><a href="#">List item 1</a></li>
-                     <li><a href="#">List item 2</a></li>
-                     <li><a href="#">List item 3</a></li>
-                     <li><a href="#">List item 4</a></li>
-                     <li><a href="#">List item 5</a></li>
-                  </ul>
-               </li>
-               <li class="dropdown pc-rheader-submenu message-notification search-toggle">
-                  <a href="#!" id="morphsearch-search" class="drop icon-circle txt-white">
-                     <i class="ti-search"></i>
-                  </a>
-               </li>
-            </ul>
+            
             <!-- Navbar Right Menu-->
-            <div class="navbar-custom-menu f-right">
-              <div class="upgrade-button">
-                <a href="#" class="icon-circle txt-white btn btn-sm btn-primary upgrade-button">
-                    <span>Upgrade To Pro</span>
-                </a>
-              </div>
-
+            <div class="navbar-custom-menu">
                <ul class="top-nav">
-                  <!--Notification Menu-->
-                    
-                  <li class="dropdown notification-menu">
-                     <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
-                        <i class="icon-bell"></i>
-                        <span class="badge badge-danger header-badge">9</span>
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li class="not-head">You have <b class="text-primary">4</b> new notifications.</li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-1.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block-time">2min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-2.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block-time">20min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media"><span class="media-left media-icon">
-                    <img class="img-circle" src="assets/images/avatar-3.png" alt="User Image">
-                  </span>
-                                    <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block-time">3 hours ago</span></div></a>
-                        </li>
-                        <li class="not-footer">
-                           <a href="#!">See all notifications.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <!-- chat dropdown -->
-                  <li class="pc-rheader-submenu ">
-                     <a href="#!" class="drop icon-circle displayChatbox">
-                        <i class="icon-bubbles"></i>
-                        <span class="badge badge-danger header-badge">5</span>
-                     </a>
-
-                  </li>
-                  <!-- window screen -->
-                  <li class="pc-rheader-submenu">
-                     <a href="#!" class="drop icon-circle" onclick="javascript:toggleFullScreen()">
-                        <i class="icon-size-fullscreen"></i>
-                     </a>
-
-                  </li>
+           
                   <!-- User Menu-->
                   <li class="dropdown">
                      <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                        <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span>
-                        <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span>
+                        <!-- <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span> -->
+                        <span>Account <i class=" icofont icofont-simple-down"></i></span>
 
                      </a>
                      <ul class="dropdown-menu settings-menu">
-                        <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
+                        <!-- <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
                         <li><a href="#"><i class="icon-user"></i> Profile</a></li>
                         <li><a href="#"><i class="icon-envelope-open"></i> My Messages</a></li>
                         <li class="p-0">
                            <div class="dropdown-divider m-0"></div>
                         </li>
-                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
-                        <li><a href=""><i class="icon-logout"></i> Logout</a></li>
+                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li> -->
+                        <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
 
                      </ul>
                   </li>
@@ -224,7 +148,7 @@
                 
                <li class="active treeview">
                <a class="waves-effect waves-dark" href="register.html">
-                   <i class="icon-list"></i><span>Dashboard</span>
+                   <i class="icon-speedometer"></i><span>Dashboard</span>
                </a>                
                 </li>
                 <li class="treeview">
@@ -237,11 +161,6 @@
                         <i class="icon-list"></i><span>Slider</span>
                     </a>                
                 </li>
-                <li class="treeview">
-                  <a class="waves-effect waves-dark" href="slider2.html">
-                      <i class="icon-list"></i><span>Slider 2</span>
-                  </a>                
-              </li>
                 <li class="treeview">
                   <a class="waves-effect waves-dark" href="contact.html">
                       <i class="icon-list"></i><span>Contacts</span>
@@ -491,25 +410,56 @@
          <!-- Container-fluid starts -->
          <div class="container-fluid">
 
-            <!-- Header Starts -->
-            <div class="row">
-               <div class="col-sm-12 p-0">
-                  <div class="main-header">
-                     <h4>Register</h4>
-                     <ol class="breadcrumb breadcrumb-title breadcrumb-arrow">
-                        <li class="breadcrumb-item">
-                           <a href="index.html">
-                              <i class="icofont icofont-home"></i>
-                           </a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#">Register</a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="basic-table.html">Registration Details</a>
-                        </li>
-                     </ol>
+             <!-- Header Starts -->
+             <div class="row">
+               <div class="main-header">
+                  <h4>Dashboard</h4>
+               </div>
+            </div>
+            <!-- 4-blocks row start -->
+            <div class="row dashboard-header">
+               <div class="col-lg-3 col-md-6">
+                  <div class="card dashboard-product">
+                     <span>Products</span>
+                     <h2 class="dashboard-total-products">4500</h2>
+                     <span class="label label-warning">Sales</span>Arriving Today
+                     <div class="side-box">
+                        <i class="ti-signal text-warning-color"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="card dashboard-product">
+                     <span>Products</span>
+                     <h2 class="dashboard-total-products">37,500</h2>
+                     <span class="label label-primary">Views</span>View Today
+                     <div class="side-box ">
+                        <i class="ti-gift text-primary-color"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="card dashboard-product">
+                     <span>Products</span>
+                     <h2 class="dashboard-total-products">$<span>30,780</span></h2>
+                     <span class="label label-success">Sales</span>Reviews
+                     <div class="side-box">
+                        <i class="ti-direction-alt text-success-color"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="card dashboard-product">
+                     <span>Products</span>
+                     <h2 class="dashboard-total-products">$<span>30,780</span></h2>
+                     <span class="label label-danger">Sales</span>Reviews
+                     <div class="side-box">
+                        <i class="ti-rocket text-danger-color"></i>
+                     </div>
                   </div>
                </div>
             </div>
+            <!-- 4-blocks row end -->
             <!-- Header end -->
 
             
@@ -522,13 +472,17 @@
    </div>
 
   
+
    <!-- Required Jqurey -->
-   <script src="assets/plugins/Jquery/dist/jquery.min.js"></script>
+   <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
    <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
    <script src="assets/plugins/tether/dist/js/tether.min.js"></script>
 
    <!-- Required Fremwork -->
    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+   <!-- waves effects.js -->
+   <script src="assets/plugins/Waves/waves.min.js"></script>
 
    <!-- Scrollbar JS-->
    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
@@ -540,37 +494,23 @@
    <!-- notification -->
    <script src="assets/plugins/notification/js/bootstrap-growl.min.js"></script>
 
-   <!-- Sparkline charts -->
-   <script src="assets/plugins/jquery-sparkline/dist/jquery.sparkline.js"></script>
-
-   <!-- Counter js  -->
-   <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-   <script src="assets/plugins/countdown/js/jquery.counterup.js"></script>
-
-   <!-- Echart js -->
-   <script src="assets/plugins/charts/echarts/js/echarts-all.js"></script>
-
-   <script src="https://code.highcharts.com/highcharts.js"></script>
-   <script src="https://code.highcharts.com/modules/exporting.js"></script>
-   <script src="https://code.highcharts.com/highcharts-3d.js"></script>
-
    <!-- custom js -->
    <script type="text/javascript" src="assets/js/main.min.js"></script>
-   <script type="text/javascript" src="assets/pages/dashboard.js"></script>
    <script type="text/javascript" src="assets/pages/elements.js"></script>
    <script src="assets/js/menu.min.js"></script>
-<script>
-var $window = $(window);
-var nav = $('.fixed-button');
-$window.scroll(function(){
-    if ($window.scrollTop() >= 200) {
-       nav.addClass('active');
-    }
-    else {
-       nav.removeClass('active');
-    }
-});
-</script>
+   <script>
+      var $window = $(window);
+      var nav = $('.fixed-button');
+      $window.scroll(function(){
+          if ($window.scrollTop() >= 200) {
+             nav.addClass('active');
+          }
+          else {
+             nav.removeClass('active');
+          }
+      });
+      </script>
+   
 
 </body>
 
