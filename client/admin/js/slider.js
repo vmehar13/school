@@ -4,7 +4,7 @@ let edrole = getWithExpiry('edrole');
 
 function check(){
     console.log('working')
-    if(edrole != 1){
+    if( edrole = undefined || edrole != 1 || edrole.isEmpty()){
         console('working1');
     
         window.location.pathname = 'client/admin/error403.html';
