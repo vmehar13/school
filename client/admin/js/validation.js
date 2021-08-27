@@ -32,3 +32,10 @@ if(edrole.value != 1){
     
     window.location.pathname = 'client/admin/error403.html';
 }
+
+function deleteItem() {
+    localStorage.removeItem("userId");
+    localStorage.removeItem("token");
+    localStorage.removeItem("edrole");
+
+  }
