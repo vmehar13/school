@@ -70,9 +70,9 @@ function getWithExpiry(key) {
     const itemStr = localStorage.getItem(key)
 
     // if the item doesn't exist, return null
-    // if (!itemStr) {
-    //     return null
-    // }
+    if (!itemStr) {
+        return null
+    }
 
     const item = JSON.parse(itemStr)
     return item.value
