@@ -165,8 +165,8 @@ exports.updateRegister = (req, res) => {
             field17Class: req.body.field17Class,
             field17Rollno: req.body.field17Rollno,
             aadhar: req.body.aadhar,
-            // aadharimg: req.files.aadharImg[0].path,
-            // profile: req.files.profilePic[0].path,
+            aadharimg: req.files.aadharImg[0].path,
+            profile: req.files.profilePic[0].path,
         }
 
     

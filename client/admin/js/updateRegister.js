@@ -40,7 +40,7 @@ const field17Rollno = document.querySelector('#input-field17Rollno')
 const aadhar = document.querySelector('#input-aadhar')
 const aadharImg = document.querySelector('#input-aadharImg')
 const lastSchool = document.querySelector('#lastSchool')
-// const = document.querySelector('#')
+const profilePhoto = document.querySelector('#profilePhoto')
 // const = document.querySelector('#')
 
 listRegistration();
@@ -56,6 +56,7 @@ function listRegistration() {
     .then(res => res.json())
     .then(register => {
       console.log(register)
+        
         field1.value = register.field1;
         tc.value = register.tc;
         studentName.value = register.studentName;
