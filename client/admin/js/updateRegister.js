@@ -4,7 +4,7 @@ let token = getWithExpiry('token');
 
 let registerId  = JSON.parse(localStorage.getItem('registerId'));
 
-const API_URL_GET = `/api/register/${registerId}`;
+const API_URL_GET = `/api/register/${registerId}/${userId}`;
 
 
 const profilePic = document.querySelector('#input-profilePic');
