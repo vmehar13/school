@@ -16,6 +16,10 @@ exports.getRegisterById = (req, res, next, id) => {
             next()
 }
 
+exports.getRegister = (req, res) => {
+    return res.json(req.register);
+}
+
 exports.createRegister = (req, res) => {
  
     const register = new Register({

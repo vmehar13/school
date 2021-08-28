@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { createRegister, upload, getRegisterAll,  getRegisterById, updateRegister, deleteRegister } = require('../controllers/register');
+const { createRegister, upload, getRegisterAll,  getRegisterById, updateRegister, deleteRegister, getRegister } = require('../controllers/register');
 const { isSignedIn, isAuthenticated, isAdmin } = require('../controllers/auth');
 const { getUserById } = require('../controllers/user');
 
@@ -15,6 +15,9 @@ var cpUpload = upload.fields([{ name: 'profilePic', maxCount: 1 }, { name: 'aadh
 
 //create-route
 router.post('/register/create', cpUpload, createRegister);
+
+//read-byproductId
+router.get('/register/:registerId/:userId', isSignedIn, isAuthenticated, isAdmin, getRegister)
 
 //get route
 router.get('/admin/register/:userId',isSignedIn, isAuthenticated, isAdmin, getRegisterAll);

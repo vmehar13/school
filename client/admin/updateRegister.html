@@ -530,7 +530,7 @@
                                      </div>
                                      <div class="col-sm-6">
                                          <p>.</p>
-                                         <input type="text" class="form-control" placeholder="Qualification of Mother" id="input-otherQualification" name="otherQualification">
+                                         <input type="text" class="form-control" placeholder="Qualification of Mother" id="input-motherQualification" name="otherQualification">
                                      </div>
                                  </div>
                                  <div class="row" style="padding-bottom: 10px;">
@@ -574,7 +574,7 @@
                                      </div>
                                      <div class="col-sm-4">
                                          <h6 class="form-control-label" style="padding-bottom: 10px;">11. Caste :</h6>
-                                         <input type="text" class="form-control" placeholder="Caste">
+                                         <input type="text" class="form-control" id="input-caste" placeholder="Caste">
                                      </div>
                                  </div>
                                  <div class="row" style="padding-bottom: 10px;">
@@ -585,45 +585,45 @@
                                  <div class="row">
                                      <div class="col-sm-3">
                                          <p class="form-control-label" style="padding-bottom: 10px;">Village/Town :</p>
-                                         <input class="form-control" type="text" name="town" placeholder="Village/Town">
+                                         <input class="form-control" id="input-town" type="text" name="town" placeholder="Village/Town">
                                      </div>
                                      <div class="col-sm-3">
                                          <p class="form-control-label" style="padding-bottom: 10px;">Post :</p>
-                                         <input class="form-control" type="text" name="post" placeholder="Post">
+                                         <input class="form-control" id="input-post" type="text" name="post" placeholder="Post">
                                      </div>
                                      <div class="col-sm-3">
                                          <p class="form-control-label" style="padding-bottom: 10px;">District :</p>
-                                         <input class="form-control" type="text" name="district" placeholder="District">
+                                         <input class="form-control" type="text" id="input-district" name="district" placeholder="District">
                                      </div>
                                      <div class="col-sm-3">
                                          <p class="form-control-label" style="padding-bottom: 10px;">State :</p>
-                                         <input class="form-control" type="text" name="state" placeholder="State">
+                                         <input class="form-control" type="text" id="input-state" name="state" placeholder="State">
                                      </div>
                                  </div>
          
                                  <div class="row" style="padding-bottom: 10px;">
                                      <div class="col-sm-12">
                                          <h6 class="form-control-label" style="padding-bottom: 20px;">13. Full Local Address :</h6>
-                                         <input class="form-control" type="text" placeholder="Enter Your Local Address" name="localAddress">
+                                         <input class="form-control" type="text" id="input-localAddress" placeholder="Enter Your Local Address" name="localAddress">
                                      </div>
                                  </div>
                                  
                                  <div class="row">
                                      <div class="col-sm-3">
                                          <h6 class="form-control-label" style="padding-bottom: 10px;">14. Mobile No. :</h6>
-                                         <input class="form-control" type="text" placeholder="Phone No." name="phone">
+                                         <input class="form-control" type="text" id="input-phone" placeholder="Phone No." name="phone">
                                      </div>
                                      <div class="col-sm-5">
                                          <div class="col-left">
                                              <h6 class="form-control-label">15. Gender</h6>
                                              <ul class="select-opt clearfix">
                                                  <li>
-                                                     <input class="form-control" id="f-option" name="gender" value="male" type="radio">
+                                                     <input class="form-control input-gender" id="f-option" name="gender" value="male" type="radio">
                                                      <label class="form-control-label" for="f-option">Male</label>
                                                      <div class="check"></div>
                                                  </li>
                                                  <li>
-                                                     <input class="form-control" id="s-option" name="gender" value="female" type="radio">
+                                                     <input class="form-control input-gender" id="s-option" name="gender" value="female" type="radio">
                                                      <label class="form-control-label" for="s-option">Female</label>
                                                      <div class="check">
                                                          <div class="inside"></div>
@@ -634,7 +634,7 @@
                                      </div>
                                      <div class="col-sm-3">
                                          <h6 class="form-control-label" style="padding-bottom: 10px;">16. Nationality :</h6>
-                                         <input class="form-control" type="text" placeholder="Nationality" name="nationality">
+                                         <input class="form-control" type="text" id="input-nationality" placeholder="Nationality" name="nationality">
                                      </div>
                                  </div>
                                  <div class="row" >
@@ -644,12 +644,12 @@
                                      <div class="col-sm-4">
                                          <ul class="select-opt clearfix">
                                              <li>
-                                                 <input id="y-option" class="form-control" name="field17" value="Yes" type="radio">
+                                                 <input id="y-option" class="form-control input-field17" name="field17" value="Yes" type="radio">
                                                  <label for="y-option" class="form-control-label">Yes</label>
                                                  <div class="check"></div>
                                              </li>
                                              <li>
-                                                 <input id="n-option" name="field17" value="No" type="radio">
+                                                 <input id="n-option" class="form-control input-field17" name="field17" value="No" type="radio">
                                                  <label for="n-option">No</label>
                                                  <div class="check">
                                                      <div class="inside"></div>
@@ -661,15 +661,15 @@
                                  <div class="row" style="padding-bottom: 10px;">
                                      <div class="col-sm-5">
                                          <p class="form-control-label">(a) Name: </p>
-                                         <input class="form-control" name="field17Name" type="text" placeholder="Full Name">
+                                         <input class="form-control" id="input-field17Name" name="field17Name" type="text" placeholder="Full Name">
                                      </div>
                                      <div class="col-sm-3">
                                          <p class="form-control-label">Class : </p>
-                                         <input class="form-control" name="field17Class" type="text" placeholder="Class">
+                                         <input class="form-control" id="input-field17Class" name="field17Class" type="text" placeholder="Class">
                                      </div>
                                      <div class="col-sm-3">
                                          <p class="form-control-label">Roll No.: </p>
-                                         <input name="field17Rollno" class="form-control" type="text" placeholder="Class">
+                                         <input name="field17Rollno" id="input-field17Rollno" class="form-control" type="text" placeholder="Class">
                                      </div>
          
                                  </div>
@@ -679,10 +679,10 @@
                                          <h6 class="form-control-label">18. Aadhar Card No. (attach copy of Aadhar)</h6>
                                      </div>
                                      <div class="col-sm-4">
-                                         <input class="form-control" name="aadhar" type="text" placeholder="Aadhar">
+                                         <input class="form-control" id="input-aadhar" name="aadhar" type="text" placeholder="Aadhar">
                                      </div>
                                      <div class="col-sm-4">
-                                         <input name="aadharImg" class="form-control" type="file" placeholder="AadharPdf">
+                                         <input name="aadharImg" id="input-aadharImg" class="form-control" type="file" placeholder="AadharPdf">
                                      </div>
                                  </div>
          
@@ -691,7 +691,7 @@
                                          <h6 class="form-control-label">19. Name of last institution</h6>
                                      </div>
                                      <div class="col-sm-8">
-                                         <input name="lastSchool" class="form-control" type="text" placeholder="Last Institution">
+                                         <input name="lastSchool" id="input-lastSchool" class="form-control" type="text" placeholder="Last Institution">
                                      </div>
                                  </div>
          
