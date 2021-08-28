@@ -59,6 +59,34 @@ function listRegistration() {
         field1.value = register.field1;
         tc.value = register.tc;
         studentName.value = register.studentName;
+        dob.value = register.dob;
+        weather.value = register.weather;
+        applicatIsMy.value = register.applicatIsMy;
+        fatherName.value = register.fatherName;
+        fatherQualification.value = register.fatherQualification;
+        motherName.value = register.motherName;
+        motherQualification.value = register.motherQualification;
+        guardianName.value = register.guardianName;
+        guardianQualification.value = register.guardianQualification;
+        transportation.value = register.transportation;
+        occupationOfParets.value = register.occupationOfParets;
+        motherTounge.value = register.motherTounge;
+        religion.value = register.register;
+        caste.value = register.caste;
+        town.value = register.town;
+        post.value = register.post;
+        district.value = register.district;
+        state.value = register.state;
+        localAddress.value = register.localAddress;
+        phone.value = register.phone;
+        gender.value = register.gender;
+        nationality.value = register.nationality;
+        field17.value = register.field17;
+        field17Class.value = register.field17Class;
+        field17Name.value = register.field17Name;
+        field17Rollno.value = register.field17Rollno;
+        aadhar.value = register.aadhar;
+        lastSchool.value = register.lastSchool;
     })
   }
 
