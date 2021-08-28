@@ -56,7 +56,7 @@ function listRegistration() {
     .then(res => res.json())
     .then(register => {
       console.log(register)
-        profilePhoto.src = `/api/${register.pr}`
+        profilePhoto.src = `/api/${register.profilePic}`
         field1.value = register.field1;
         tc.value = register.tc;
         studentName.value = register.studentName;
