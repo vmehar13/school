@@ -52,7 +52,7 @@ function listRegistrations() {
             abc1.textContent = 'Delete';
 
             abc1.addEventListener('click', () => {
-                localStorage.setItem("registerId", JSON.stringify(category._id)); 
+                localStorage.setItem("registerId", JSON.stringify(register._id)); 
                 const URL12 = `/api/admin/register/${registerId}/${userId}`;
 
                 const options = {
