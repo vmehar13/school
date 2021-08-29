@@ -1,8 +1,11 @@
 const form = document.querySelector('.form');
+const updateF = document.querySelector('#updateF');
 let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
 
 let registerId  = JSON.parse(localStorage.getItem('registerId'));
+
+updateF.action = `/api/admin/register/${registerId}/${userId}`
 
 const API_URL_GET = `/api/register/${registerId}/${userId}`;
 

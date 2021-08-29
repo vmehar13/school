@@ -78,8 +78,21 @@ exports.createRegister = (req, res) => {
         }
         // res.json(register);
         res.write(`
-            <h1>Your Request Sumbitted Successfullty</h1>
-            <a href="/index-2.html">Go Back</a>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <div class="jumbotron text-center">
+            <h1 class="display-3">Thank You!</h1>
+            <p class="lead"><strong>Admission form submitted succesfully.</strong> for further instructions on how to complete admission you can contact on help-line No.</p>
+            <p class="lead"><strong>Reference ID:</strong> ${register._id}</p>
+
+            <hr>
+            <p>
+              Having trouble? <a href="/contact.html">Contact us</a>
+            </p>
+            <p class="lead">
+              <a class="btn btn-primary btn-sm" href="/index-2.html" role="button">Continue to homepage</a>
+            </p>
+        </div>
         `)
         res.send();
     })

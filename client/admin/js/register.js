@@ -41,7 +41,7 @@ function listRegistrations() {
             abc.addEventListener('click', () => {
                 localStorage.setItem("registerId", JSON.stringify(register._id)); 
                 
-                window.location.pathname = '/client/admin/updateRegister.html'
+                window.location.pathname = '/admin/updateRegister.html'
             })
             td3.appendChild(abc);
 
@@ -52,8 +52,8 @@ function listRegistrations() {
             abc1.textContent = 'Delete';
 
             abc1.addEventListener('click', () => {
-                localStorage.setItem("categoryId", JSON.stringify(category._id)); 
-                const URL12 = `/api/category/${category._id}/${userId}`;
+                localStorage.setItem("registerId", JSON.stringify(category._id)); 
+                const URL12 = `/api/admin/register/${registerId}/${userId}`;
 
                 const options = {
                     method: 'DELETE',
