@@ -73,7 +73,7 @@ function listRegistrations() {
                       console.log(data)
                   })
 
-                window.location.pathname = '/admin/slider.html'
+                window.location.pathname = '/admin/register.html'
 
             })
             td4.appendChild(abc1);
