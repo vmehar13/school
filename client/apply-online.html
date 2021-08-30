@@ -72,7 +72,8 @@
                     <form action="/api/register/create" enctype="multipart/form-data" id="apply-form" method="POST" class="form-outer">
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="file" name="profilePic" placeholder="profile Image">
+                                <h6 style="padding-bottom: 10px;">Upload Student Photograph</h6>
+                                <input type="file" name="profilePic"  placeholder="profile Image" required>
                             </div>
                         </div>
                         <div class="row" style="padding-bottom: 10px;">
@@ -195,7 +196,7 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <h6 style="padding-bottom: 10px;">9. Mother Tounge :</h6>
-                                <input type="text" placeholder="Mother Tounge" name="motherTounge">
+                                <input type="text" required placeholder="Mother Tounge" name="motherTounge">
                             </div>
                             <div class="col-sm-4">
                                 <h6 style="padding-bottom: 10px;"  >10. Religion :</h6>
@@ -214,33 +215,33 @@
                         <div class="row">
                             <div class="col-sm-3">
                                 <p style="padding-bottom: 10px;">Village/Town :</p>
-                                <input type="text" name="town" placeholder="Village/Town">
+                                <input type="text" required name="town" placeholder="Village/Town">
                             </div>
                             <div class="col-sm-3">
                                 <p style="padding-bottom: 10px;">Post :</p>
-                                <input type="text" name="post" placeholder="Post">
+                                <input type="text" required name="post" placeholder="Post">
                             </div>
                             <div class="col-sm-3">
                                 <p style="padding-bottom: 10px;">District :</p>
-                                <input type="text" name="district" placeholder="District">
+                                <input type="text" required name="district" placeholder="District">
                             </div>
                             <div class="col-sm-3">
                                 <p style="padding-bottom: 10px;">State :</p>
-                                <input type="text" name="state" placeholder="State">
+                                <input type="text" required name="state" placeholder="State">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-12">
                                 <h6 style="padding-bottom: 20px;">13. Full Local Address :</h6>
-                                <input type="text" placeholder="Enter Your Local Address" name="localAddress">
+                                <input type="text" required placeholder="Enter Your Local Address" name="localAddress">
                             </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-sm-4">
                                 <h6 style="padding-bottom: 10px;">14. Mobile No. :</h6>
-                                <input type="text" placeholder="Phone No." name="phone">
+                                <input type="text" required placeholder="Phone No." name="phone">
                             </div>
                             <div class="col-sm-4">
                                 <div class="col-left">
@@ -308,10 +309,10 @@
                                 <h6>18. Aadhar Card No. (attach copy of Aadhar)</h6>
                             </div>
                             <div class="col-sm-4">
-                                <input name="aadhar" type="text" placeholder="Aadhar">
+                                <input name="aadhar" type="text" placeholder="Aadhar" required>
                             </div>
                             <div class="col-sm-4">
-                                <input name="aadharImg" type="file" placeholder="AadharPdf">
+                                <input name="aadharImg" type="file" placeholder="AadharPdf" required>
                             </div>
                         </div>
 
@@ -417,7 +418,7 @@
                             </div>
                         </div> -->
                         <div class="button-outer">
-                            <button type="submit" class="btn" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
+                            <button type="submit" class="btn" value="upload">Proceed <span class="icon-more-icon"></span></button>
                         </div>
                     </form>
                 </div>
