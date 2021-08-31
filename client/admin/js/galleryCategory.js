@@ -44,42 +44,42 @@ function listGallery() {
             td3.appendChild(img);
 
 
-            // const td4 = document.createElement('td');
-            // const abc1 = document.createElement('a');
-            // abc.type = 'submit';
-            // abc1.textContent = 'Delete';
+            const td4 = document.createElement('td');
+            const abc1 = document.createElement('a');
+            abc.type = 'submit';
+            abc1.textContent = 'Delete';
 
-            // abc1.addEventListener('click', () => {
-            //     localStorage.setItem("galleryId", JSON.stringify(gallery._id)); 
-            //     const URL12 = `http://localhost:8000/api/gallery/${gallery._id}/${userId}`;
+            abc1.addEventListener('click', () => {
+                localStorage.setItem("galleryId", JSON.stringify(gallery._id)); 
+                const URL12 = `http://localhost:8000/api/gallery/${gallery._id}/${userId}`;
 
-            //     const options = {
-            //         method: 'DELETE',
-            //         headers: {
-            //             'Content-Type': 'application/json',
-            //             'Authorization' : `Bearer ${token}`
-            //         },
+                const options = {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization' : `Bearer ${token}`
+                    },
                     
-            //     }
+                }
                 
-            //     fetch(URL12, options)
-            //       .then(response => {
-            //         return response.json();
-            //       })
-            //       .then(data => {
-            //           console.log(data)
-            //       })
+                fetch(URL12, options)
+                  .then(response => {
+                    return response.json();
+                  })
+                  .then(data => {
+                      console.log(data)
+                  })
 
-            //     window.location.pathname = '/client/admin/admin.html'
+                window.location.pathname = '/admin/galleryCategory.html'
 
-            // })
-            // td4.appendChild(abc1);
+            })
+            td4.appendChild(abc1);
 
             tr.appendChild(td)
             tr.appendChild(td1)
             tr.appendChild(td2)
             tr.appendChild(td3)
-            // tr.appendChild(td4)
+            tr.appendChild(td4)
 
             galleryPanel.appendChild(tr);
         })
