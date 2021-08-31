@@ -22,6 +22,7 @@ function listGallery() {
     .then(res => res.json())
     .then(gallery => {
         gallery.forEach(gallery => {
+            console.log(gallery)
             const tr = document.createElement('tr');
             
             const td = document.createElement('td');
