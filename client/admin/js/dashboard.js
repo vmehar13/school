@@ -6,7 +6,9 @@ const API_URL = `/api/admin/register/${userId}`
 const panel = document.querySelector('.panel');
 
 //=============Start-For-Dashboard==================
-
+const bl1 = document.querySelector('#bl-1');
+const bl2 = document.querySelector('#bl-2');
+const bl3 = document.querySelector('#bl-3');
 
 
 
@@ -25,7 +27,7 @@ function listRegistrations() {
     })
     .then(res => res.json())
     .then(register => {
-        
+        bl1.innerHTML = register.length 
         register.forEach(register => {
         console.log(register);
 
@@ -94,6 +96,25 @@ function listRegistrations() {
 
             panel.appendChild(tr);
         })
+    })
+}
+
+const API_URL_CONTACT = `/api/admin/contact/${userId}`
+
+
+listContacts();
+
+function listContacts() {
+    fetch(API_URL, {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(contact => {
+        bl2 = contact.length
     })
 }
 
