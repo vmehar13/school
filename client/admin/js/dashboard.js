@@ -114,7 +114,7 @@ function listContacts() {
     })
     .then(res => res.json())
     .then(contact => {
-        bl2 = contact.length
+        bl2.innerHTML = contact.length
     })
 }
 
