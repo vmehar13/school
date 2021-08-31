@@ -118,6 +118,24 @@ function listContacts() {
     })
 }
 
+const API_URL_GALLERY = `/api/gallery`
+
+
+listGallery();
+
+function listGallery() {
+    fetch(API_URL_GALLERY, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(gallery => {
+        bl3.innerHTML = gallery.length
+    })
+}
+
 function getWithExpiry(key) {
     const itemStr = localStorage.getItem(key)
 
