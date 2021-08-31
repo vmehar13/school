@@ -5,6 +5,13 @@ console.log(userId)
 const API_URL = `/api/admin/register/${userId}`
 const panel = document.querySelector('.panel');
 
+//=============Start-For-Dashboard==================
+const bl1 = document.querySelector('#bl-1');
+
+
+
+//=============End-for-Dashboard====================
+
 
 listRegistrations();
 
@@ -18,6 +25,7 @@ function listRegistrations() {
     })
     .then(res => res.json())
     .then(register => {
+        bl1.innerHTML = register.length 
         register.forEach(register => {
         console.log(register);
 
