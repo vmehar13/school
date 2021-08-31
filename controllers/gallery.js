@@ -3,6 +3,20 @@ const multer = require('multer');
 const path = require('path');
 const mongoose = require('mongoose');
 
+
+exports.getGalleryById = (req, res, next, id) => {
+    Gallery.findById(id)
+                .exec((err, gallery) => {
+                    if(err){
+                        return res.status(100).json({
+                            error: "Unable to find Registration form in DB"
+                        })
+                    }
+                    req.gallery = gallery
+                })  
+            next()
+}
+
 exports.createGallery = (req, res) => {
     const gallery = new Gallery({
         _id: new mongoose.Types.ObjectId(),
@@ -28,6 +42,20 @@ exports.getAllGallery = (req, res) => {
             })
         };
         res.json(gallery);
+    })
+}
+
+exports.deleteGallery = (req, res) => {
+    const gallery = req.gallery;
+    gallery.remove((err, deleteGallery) => {
+        if(err){
+            return res.status(400).json({
+                error: "Gallery not DELETED"
+            })
+        }
+        res.json({
+            message: `Register ${deleteGallery} DELETED SUCCESFULLY`
+        })
     })
 }
 

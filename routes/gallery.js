@@ -3,10 +3,11 @@ const router = express.Router();
 
 const { getUserById } = require('../controllers/user');
 const { isSignedIn, isAuthenticated, isAdmin } = require('../controllers/auth');
-const { createGallery, upload, getAllGallery } = require('../controllers/gallery');
+const { createGallery, upload, getAllGallery, getGalleryById, deleteGallery } = require('../controllers/gallery');
 
 //Params
 router.param('userId', getUserById)
+router.param('galleryId', getGalleryById)
 
 //Actual Routes
 
@@ -15,5 +16,8 @@ router.post('/gallery/create/:userId', isAdmin, upload.single('photo'), createGa
 
 //Read
 router.get('/gallery', getAllGallery);
+
+//Delete
+router.delete('/gallery/:galleryId/:userId', isSignedIn, isAuthenticated, isAdmin, deleteGallery);
 
 module.exports = router;
