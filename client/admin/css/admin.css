@@ -1,4 +1,4 @@
-.panel {
+.panel, .galleryPanel {
     counter-reset: serial-number;  /* Set the serial number counter to 0 */
   }
   
