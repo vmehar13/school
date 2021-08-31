@@ -46,7 +46,7 @@ function listGallery() {
 
             const td4 = document.createElement('td');
             const abc1 = document.createElement('a');
-            abc.type = 'submit';
+            abc1.type = 'submit';
             abc1.textContent = 'Delete';
 
             abc1.addEventListener('click', () => {
