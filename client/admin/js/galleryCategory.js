@@ -78,7 +78,7 @@ function listGallery() {
             tr.appendChild(td1)
             tr.appendChild(td2)
             tr.appendChild(td3)
-            tr.appendChild(td4)
+            // tr.appendChild(td4)
 
             galleryPanel.appendChild(tr);
         })
