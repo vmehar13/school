@@ -105,7 +105,7 @@ const API_URL_CONTACT = `/api/admin/contact/${userId}`
 listContacts();
 
 function listContacts() {
-    fetch(API_URL, {
+    fetch(API_URL_CONTACT, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`,
