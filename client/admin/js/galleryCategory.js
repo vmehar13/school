@@ -4,6 +4,7 @@ let userId = getWithExpiry('userId');
 let token = getWithExpiry('token');
 console.log(userId)
 
+let galleryPanel = document.querySelector('.galleryPanel')
 let gal = document.querySelector('.gal');
 gal.action = `/api/gallery/create/${userId}`;
 
