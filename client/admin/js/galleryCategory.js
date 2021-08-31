@@ -7,86 +7,82 @@ console.log(userId)
 let gal = document.querySelector('.gal');
 gal.action = `/api/gallery/create/${userId}`;
 
-// listCategory();
+const API_URL_GALLERY = `/api/gallery`
 
-// function listCategory() {
-//     fetch(API_URL, {
-//         method: 'GET',
-//         headers: {
-//             'Authorization': `Bearer ${token}`,
-//             'Content-Type': 'application/json'
-//         }
-//     })
-//     .then(res => res.json())
-//     .then(category => {
-//         console.log(category);
-//         category.forEach(category => {
-//             const tr = document.createElement('tr');
+
+listGallery();
+
+function listGallery() {
+    fetch(API_URL_GALLERY, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(gallery => {
+        gallery.forEach(gallery => {
+            const tr = document.createElement('tr');
             
-//             const td = document.createElement('td');
-//             td.textContent
+            const td = document.createElement('td');
+            td.textContent
             
-//             const td1 = document.createElement('td');
-//             td1.textContent = category._id;
-//             td1.id = category._id;
+            const td1 = document.createElement('td');
+            td1.textContent = gallery._id;
+            td1.id = gallery._id;
 
-//             const td2 = document.createElement('td');
-//             td2.textContent = category.name;
+            const td2 = document.createElement('td');
+            td2.textContent = gallery.category;
 
-//             const td3 = document.createElement('td');
-//             const abc = document.createElement('a');
-//             abc.type = 'submit';
-        
-//             abc.textContent = "Edit";
-//             abc.addEventListener('click', () => {
-//                 localStorage.setItem("categoryId", JSON.stringify(category._id)); 
-                
-//                 window.location.pathname = '/updateCategory.html'
-//             })
-//             td3.appendChild(abc);
+            const td3 = document.createElement('td');
+            const img = document.createElement('img');
+            img.src = `/api/${gallery.photo}`
+            img.height = '100px';
+            img.width = "100px"
+            td3.appendChild(img);
 
 
-//             const td4 = document.createElement('td');
-//             const abc1 = document.createElement('a');
-//             abc.type = 'submit';
-//             abc1.textContent = 'Delete';
+            // const td4 = document.createElement('td');
+            // const abc1 = document.createElement('a');
+            // abc.type = 'submit';
+            // abc1.textContent = 'Delete';
 
-//             abc1.addEventListener('click', () => {
-//                 localStorage.setItem("categoryId", JSON.stringify(category._id)); 
-//                 const URL12 = `http://localhost:8000/api/category/${category._id}/${userId}`;
+            // abc1.addEventListener('click', () => {
+            //     localStorage.setItem("galleryId", JSON.stringify(gallery._id)); 
+            //     const URL12 = `http://localhost:8000/api/gallery/${gallery._id}/${userId}`;
 
-//                 const options = {
-//                     method: 'DELETE',
-//                     headers: {
-//                         'Content-Type': 'application/json',
-//                         'Authorization' : `Bearer ${token}`
-//                     },
+            //     const options = {
+            //         method: 'DELETE',
+            //         headers: {
+            //             'Content-Type': 'application/json',
+            //             'Authorization' : `Bearer ${token}`
+            //         },
                     
-//                 }
+            //     }
                 
-//                 fetch(URL12, options)
-//                   .then(response => {
-//                     return response.json();
-//                   })
-//                   .then(data => {
-//                       console.log(data)
-//                   })
+            //     fetch(URL12, options)
+            //       .then(response => {
+            //         return response.json();
+            //       })
+            //       .then(data => {
+            //           console.log(data)
+            //       })
 
-//                 window.location.pathname = '/client/admin/admin.html'
+            //     window.location.pathname = '/client/admin/admin.html'
 
-//             })
-//             td4.appendChild(abc1);
+            // })
+            // td4.appendChild(abc1);
 
-//             tr.appendChild(td)
-//             tr.appendChild(td1)
-//             tr.appendChild(td2)
-//             tr.appendChild(td3)
-//             tr.appendChild(td4)
+            tr.appendChild(td)
+            tr.appendChild(td1)
+            tr.appendChild(td2)
+            tr.appendChild(td3)
+            tr.appendChild(td4)
 
-//             panel.appendChild(tr);
-//         })
-//     })
-// }
+            galleryPanel.appendChild(tr);
+        })
+    })
+}
 
 function getWithExpiry(key) {
     const itemStr = localStorage.getItem(key)
