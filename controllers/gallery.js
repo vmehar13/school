@@ -31,7 +31,7 @@ exports.createGallery = (req, res) => {
             })
         }
         // res.json(gallery);
-        res.redirect('/admin/gallerCategory.html')
+        res.redirect('/admin/galleryCategory.html')
     })
 }
 
