@@ -42,7 +42,7 @@ function deleteItem() {
     localStorage.removeItem("token");
     localStorage.removeItem("edrole");
 
-    window.location.pathname = '/index-2.html';
+    window.location.pathname = '/index.html';
 
 
   }

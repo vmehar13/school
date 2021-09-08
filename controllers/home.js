@@ -64,8 +64,8 @@ exports.updateBanner = (req, res) => {
                 error: "Unable to UPDATE DATA in DB"
             })
         }
-        res.json(updateBanner)
-        // res.redirect('/admin/slider.html')
+        // res.json(updateBanner)
+        res.redirect('/admin/slider.html')
     })
     
         

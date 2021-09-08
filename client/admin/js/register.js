@@ -53,6 +53,17 @@ function listRegistrations() {
             })
             td3.appendChild(abc);
 
+            const td3b = document.createElement('td');
+            const abcb = document.createElement('a');
+            abcb.type = 'submit';
+        
+            abcb.textContent = "Update";
+            abcb.addEventListener('click', () => {
+                localStorage.setItem("registerId", JSON.stringify(register._id)); 
+                
+                window.location.pathname = '/admin/updateRegister.html'
+            })
+            td3b.appendChild(abcb);
 
             const td4 = document.createElement('td');
             const abc1 = document.createElement('a');
@@ -90,6 +101,7 @@ function listRegistrations() {
             tr.appendChild(td1)
             tr.appendChild(td2)
             tr.appendChild(td3)
+            tr.appendChild(td3b)
             tr.appendChild(td4)
 
             panel.appendChild(tr);

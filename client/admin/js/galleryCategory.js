@@ -51,7 +51,7 @@ function listGallery() {
 
             abc1.addEventListener('click', () => {
                 localStorage.setItem("galleryId", JSON.stringify(gallery._id)); 
-                const URL12 = `http://localhost:8000/api/gallery/${gallery._id}/${userId}`;
+                const URL12 = `/api/gallery/${gallery._id}/${userId}`;
 
                 const options = {
                     method: 'DELETE',

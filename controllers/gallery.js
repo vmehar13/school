@@ -30,7 +30,8 @@ exports.createGallery = (req, res) => {
                 error: "Gallery UNABLE to save in DB"
             })
         }
-        res.json(gallery);
+        // res.json(gallery);
+        res.redirect('/admin/gallerCategory.html')
     })
 }
 
