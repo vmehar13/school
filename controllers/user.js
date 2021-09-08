@@ -31,11 +31,13 @@ exports.updateUser = (req, res) =>{
                     error: "You are not authorized to Update"
                 });
             }
-            user.salt = undefined;
-            user.encry_password = undefined;
-           /* user.profile.createdAt = undefined;
-            user.profile.updatedAt = undefined; */
-            res.json(user);
+            // user.salt = undefined;
+            // user.encry_password = undefined;
+            // user.profile.createdAt = undefined;
+            // user.profile.updatedAt = undefined;
+            res.json(user.firstName,
+                user.lastName,
+                user.email);
         }
     )
 }
