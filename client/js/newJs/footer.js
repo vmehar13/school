@@ -18,7 +18,7 @@ templateFooter.innerHTML = `
             <div class="foot-nav">
                 <h3>Features</h3>
                 <ul>
-                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="fees-structure.html">Fees Structure</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -47,7 +47,7 @@ templateFooter.innerHTML = `
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="footer-logo hidden-xs"><a href="index-2.html"><img src="images/footer-logo.png" class="img-responsive" alt=""></a></div>
+            <div class="footer-logo hidden-xs"><a href="index.html"><img src="images/footer-logo.png" class="img-responsive" alt=""></a></div>
             <p>© 2020 <span>AS-SABEEL</span>. All rights reserved</p>
             <ul class="terms clearfix">
                 <li><a href="terms.html">TERMS OF USE</a></li>

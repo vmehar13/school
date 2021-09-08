@@ -27,7 +27,7 @@ template.innerHTML = `
 <!-- End Header top Bar -->
 <!-- Start Header Middle -->
 <div class="container header-middle">
-    <div class="row"> <span class="col-xs-6 col-sm-3"><a href="index-2.html"><img src="images/logo.png" class="img-responsive" alt=""></a></span>
+    <div class="row"> <span class="col-xs-6 col-sm-3"><a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a></span>
         <div class="col-xs-6 col-sm-3"></div>
         <div class="col-xs-6 col-sm-9">
             <div class="contact clearfix">
@@ -69,7 +69,7 @@ template.innerHTML = `
                 <button class="search-btn"><span class="icon-search-icon"></span></button>
             </form> -->
             <ul class="nav navbar-nav" style="margin-left: 22%">
-                <li> <a href="index-2.html">Home</a></li>
+                <li> <a href="index.html">Home</a></li>
                 <li class="dropdown"> <a data-toggle="dropdown" href="#">About Us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="about.html">Aim Of School</a></li>
