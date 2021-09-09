@@ -410,283 +410,320 @@
          <div class="container-fluid">
 
             <!-- Header Starts -->
-            <div class="row">
-               <div class="col-sm-12 p-0">
-                  <div class="main-header">
-                     <h4>Register</h4>
-                     <ol class="breadcrumb breadcrumb-title breadcrumb-arrow">
-                        <li class="breadcrumb-item">
-                           <a href="index.html">
-                              <i class="icofont icofont-home"></i>
-                           </a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#">Register</a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="basic-table.html">Update Registration Details</a>
-                        </li>
-                     </ol>
-                  </div>
-               </div>
-            </div>
-            <!-- Header end -->
-
-            <!-- Tables start -->
             <!-- Row start -->
             <div class="row">
-               <div class="col-sm-12">
-                  <!-- Basic Table starts -->
+               <!--Inline Form starts-->
+               <div class="col-lg-12 inline-forms">
                   <div class="card">
-                     
+                     <div class="card-header">
+                        <!-- <h5 class="card-header-text">Inline Form</h5> -->
+                       </div>
+               
                      <div class="card-block">
-                        <div class="row">
-                           <div class="col-sm-12 table-responsive">
-                              <form id="updateF" enctype="multipart/form-data" method="POST" class="form-outer">
-                                 <div class="row">
-                                     <div class="col-sm-12">
-                                         <input type="file" class="form-control" name="profilePic"  placeholder="profile Image">
-                                     </div>
-                                     <img id="profilePhoto" alt="" width="200" height="200">
+                        <!-- <p class="m-b-20">
+                           Add <code>.form-inline</code> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. <strong>This only applies to forms within viewports
+                                     that are at least 768px wide.</strong>
+                        </p> -->
+
+                        
+                        <div class="card inline-form-style inline-form-1">
+                           <div class="card-header">
+                              <h5 class="card-header-text">Student Registration Form</h5>
+                              <div class="f-right">
+                                 <!-- <a href="" data-toggle="modal" data-target="#hidden-labels-Modal"><i class="icofont icofont-code-alt"></i></a> -->
+                              </div>
+                           </div>
+                           <div class="modal fade modal-flex" id="hidden-labels-Modal" tabindex="-1" role="dialog">
+                              <div class="modal-dialog modal-lg" role="document">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                     <span aria-hidden="true">&times;</span>
+                                                 </button>
+                                       <h5 class="modal-title">Code Explanation for Hidden Labels</h5>
+                                    </div>
+                                    <!-- end of modal-header -->
+                                    <div class="modal-body">
+                                       <pre class="brush: html;">
+
+                                           /* Hidden Labels*/
+
+                                             &lt;form class="form-inline"&gt;
+                                                 &lt;div class="form-group"&gt;
+                                                     &lt;label class="sr-only form-control-label" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+                                                         &lt;input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email"&gt;
+                                                 &lt;/div&gt;
+                                                 &lt;div class="form-group"&gt;
+                                                     &lt;label class="sr-only form-control-label" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+                                                         &lt;input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password"&gt;
+                                                 &lt;/div&gt;
+                                                 &lt;div class="form-check"&gt;
+                                                     &lt;label class="form-check-label" for="exampleremember"&gt;
+                                                             &lt;input class="form-check-input" type="checkbox" id="exampleremember"&gt;Remember me
+                                                     &lt;/label&gt;
+                                                 &lt;/div&gt;
+                                                 &lt;button type="submit" class="btn btn-primary waves-effect waves-light"&gt;Sign in&lt;/button&gt;
+                                             &lt;/form&gt;
+                                         </pre>
+                                    </div>
+                                    <!-- end of modal-body -->
                                  </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">1. In which class have you to take admission</h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <select class="custom_select form-control" id="input-field1" name="field1" style="padding-bottom: 5px;">
-                                             <option value="day_scholar">Day Scholar</option>
-                                             <option value="hosteller">hosteller</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label ">2. Transfer Certificate submitted (Compusory for Std. I and above) Yes/No</h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <select id="input-tc" class="custom_select form-control" name="tc">
-                                             <option value="yes">Yes</option>
-                                             <option value="no">No</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;" >
-                                     <div class="col-sm-6"  >
-                                         <h6 class="form-control-label">3. Name of Student : </h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <input type='text' id="input-studentName" class="form-control" name="studentName" placeholder="Full Name" />
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">4. Date of Birth : </h6>
-                                     </div>
-                                     <div class="col-sm-6 clearfix">
-                                         <div class="date">
-                                             <input type='text' id="input-dob" class="datepicker form-control" name="dob" placeholder="Date of birth" />
-                                             <span class="icon-calander-icon"></span>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 20px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">5. Weather : </h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <select class="custom_select form-control" id="input-weather" name="weather">
-                                             <option value="Gen">GEN</option>
-                                             <option value="OBC">OBC</option>
-                                             <option value="SC">SC</option>
-                                             <option value="ST">ST</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">6. Applicant is my : </h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <select class="custom_select form-control" id="input-applicatIsMy" name="applicatIsMy">
-                                             <option value="Son">Son</option>
-                                             <option value="Daughter">Daughter</option>
-                                             <option value="Ward">Ward</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="col-sm-6">
-                                         <p class="form-control-label">(a) Father Details :</p> 
-                                         <input type="text" class="form-control" placeholder="Name of Father" id="input-fatherName" name="fatherName">
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <p>.</p>
-                                         <input type="text" class="form-control" placeholder="Qualification of Father" id="input-fatherQualification" name="fatherQualification">
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="col-sm-6">
-                                         <p class="form-control-label">(b) Mother Details :</p> 
-                                         <input type="text" class="form-control" placeholder="Name of Mother" id="input-motherName" name="motherName">
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <p>.</p>
-                                         <input type="text" class="form-control" placeholder="Qualification of Mother" id="input-motherQualification" name="otherQualification">
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <p class="form-control-label">(c) Guardian Details :</p> 
-                                         <input type="text" class="form-control" placeholder="Name of Guardian" id="input-guardianName" name="guardianName">
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <p>.</p>
-                                         <input type="text" class="form-control" placeholder="Qualification of Guardian" id="input-guardianQualification" name="guardianQualification">
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">7. Transportation :</h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <select class="custom_select form-control" style="padding-bottom: 5px;" id="input-transportation" name="transportation">
-                                             <option value="Self">Self</option>
-                                             <option value="Auto">Auto</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-6">
-                                         <h6 class="form-control-label">8. Occupation of Parents/Guardian :</h6>
-                                     </div>
-                                     <div class="col-sm-6">
-                                         <input class="form-control" type="text" placeholder="Occupation" id="input-occupationOfParets" name="occupationOfParets">
-                                     </div>
-                                 </div>
-         
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-4">
-                                         <h6 class="form-control-label" style="padding-bottom: 10px;">9. Mother Tounge :</h6>
-                                         <input type="text" class="form-control" placeholder="Mother Tounge" id="input-motherTounge" name="motherTounge">
-                                     </div>
-                                     <div class="col-sm-4">
-                                         <h6 class="form-control-label" style="padding-bottom: 10px;"  >10. Religion :</h6>
-                                         <input type="text" class="form-control" placeholder="Religion" id="input-religion" name="religion">
-                                     </div>
-                                     <div class="col-sm-4">
-                                         <h6 class="form-control-label" style="padding-bottom: 10px;">11. Caste :</h6>
-                                         <input type="text" class="form-control" id="input-caste" placeholder="Caste">
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-12">
-                                         <h6 class="form-control-label" style="padding-bottom: 20px;">12. Home Address :</h6>
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label" style="padding-bottom: 10px;">Village/Town :</p>
-                                         <input class="form-control" id="input-town" type="text" name="town" placeholder="Village/Town">
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label" style="padding-bottom: 10px;">Post :</p>
-                                         <input class="form-control" id="input-post" type="text" name="post" placeholder="Post">
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label" style="padding-bottom: 10px;">District :</p>
-                                         <input class="form-control" type="text" id="input-district" name="district" placeholder="District">
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label" style="padding-bottom: 10px;">State :</p>
-                                         <input class="form-control" type="text" id="input-state" name="state" placeholder="State">
-                                     </div>
-                                 </div>
-         
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-12">
-                                         <h6 class="form-control-label" style="padding-bottom: 20px;">13. Full Local Address :</h6>
-                                         <input class="form-control" type="text" id="input-localAddress" placeholder="Enter Your Local Address" name="localAddress">
-                                     </div>
-                                 </div>
-                                 
-                                 <div class="row">
-                                     <div class="col-sm-3">
-                                         <h6 class="form-control-label" style="padding-bottom: 10px;">14. Mobile No. :</h6>
-                                         <input class="form-control" type="text" id="input-phone" placeholder="Phone No." name="phone">
-                                     </div>
-                                     <div class="col-sm-5">
-                                         <div class="col-left">
-                                             <h6 class="form-control-label">15. Gender</h6>
-                                             <input class="form-control" type="text" id="input-gender" placeholder="gender" name="gender">
-                                         </div>
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <h6 class="form-control-label" style="padding-bottom: 10px;">16. Nationality :</h6>
-                                         <input class="form-control" type="text" id="input-nationality" placeholder="Nationality" name="nationality">
-                                     </div>
-                                 </div>
-                                 <div class="row" >
-                                     <div class="col-sm-8">
-                                         <h6 class="form-control-label">17. Does the Applicant have brother/sister studing in this school</h6>
-                                     </div>
-                                     <div class="col-sm-4">
-                                       <input class="form-control" type="text" id="input-field17" placeholder="" name="field17">
-                                     </div>
-                                 </div>
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-5">
-                                         <p class="form-control-label">(a) Name: </p>
-                                         <input class="form-control" id="input-field17Name" name="field17Name" type="text" placeholder="Full Name">
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label">Class : </p>
-                                         <input class="form-control" id="input-field17Class" name="field17Class" type="text" placeholder="Class">
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <p class="form-control-label">Roll No.: </p>
-                                         <input name="field17Rollno" id="input-field17Rollno" class="form-control" type="text" placeholder="Class">
-                                     </div>
-         
-                                 </div>
-         
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-4">
-                                         <h6 class="form-control-label">18. Aadhar Card No. (attach copy of Aadhar)</h6>
-                                     </div>
-                                     <div class="col-sm-4">
-                                         <input class="form-control" id="input-aadhar" name="aadhar" type="text" placeholder="Aadhar">
-                                     </div>
-                                     <div class="col-sm-4">
-                                         <input name="aadharImg" id="input-aadharImg" class="form-control" type="file" placeholder="AadharPdf">
-                                     </div>
-                                 </div>
-         
-                                 <div class="row" style="padding-bottom: 10px;">
-                                     <div class="col-sm-4">
-                                         <h6 class="form-control-label">19. Name of last institution</h6>
-                                     </div>
-                                     <div class="col-sm-8">
-                                         <input name="lastSchool" id="input-lastSchool" class="form-control" type="text" placeholder="Last Institution">
-                                     </div>
-                                 </div>
-         
-                                 <div class="row form-control-label" style="padding-bottom: 30px;" >
-                                     <div class="col-sm-12">
-                                         <h6 class="form-control-label">20. I agree to follow these following.</h6>
-                                         <p>(a). I declare that the date of birth is correct and shall not ask for change in future.</p>
-                                         <p>(b). I decalare that all other particulars are correct.</p>
-                                         <p>(c). I agree to abide by rules and regulations of the school. I will extend full Co-operation to the proper-development of my child</p>
-                                     </div>
-                                 </div>
-                                 <div class="button-outer">
-                                     <button type="submit" class="btn" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
-                                 </div>
-                             </form>
+                                 <!-- end of modal-content -->
+                              </div>
+                              <!-- end of modal-dialog -->
+                           </div>
+                           <!-- end of modal -->
+
+                           <div class="card-block">
+                               <form id="updateF" enctype="multipart/form-data" method="POST" class="form-outer">
+                                   <div class="row">
+                                       <div class="col-sm-12">
+                                           <!-- <input type="file" class="form-control" name="profilePic"  placeholder="profile Image"> -->
+                                       </div>
+                                       <img id="profilePhoto" style="padding-left: 15px; padding-bottom: 15px;" alt="" width="200" height="200">
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">1. In which class have you to take admission</h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <select class="custom_select form-control" id="input-field1" name="field1" style="padding-bottom: 5px;">
+                                               <option value="day_scholar">Day Scholar</option>
+                                               <option value="hosteller">hosteller</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label ">2. Transfer Certificate submitted (Compusory for Std. I and above) Yes/No</h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <select id="input-tc" class="custom_select form-control" name="tc">
+                                               <option value="yes">Yes</option>
+                                               <option value="no">No</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;" >
+                                       <div class="col-sm-6"  >
+                                           <h6 class="form-control-label">3. Name of Student : </h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <input type='text' id="input-studentName" class="form-control" name="studentName" placeholder="Full Name" />
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">4. Date of Birth : </h6>
+                                       </div>
+                                       <div class="col-sm-6 clearfix">
+                                           <div class="date">
+                                               <input type='text' id="input-dob" class="datepicker form-control" name="dob" placeholder="Date of birth" />
+                                               <span class="icon-calander-icon"></span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 20px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">5. Weather : </h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <select class="custom_select form-control" id="input-weather" name="weather">
+                                               <option value="Gen">GEN</option>
+                                               <option value="OBC">OBC</option>
+                                               <option value="SC">SC</option>
+                                               <option value="ST">ST</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">6. Applicant is my : </h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <select class="custom_select form-control" id="input-applicatIsMy" name="applicatIsMy">
+                                               <option value="Son">Son</option>
+                                               <option value="Daughter">Daughter</option>
+                                               <option value="Ward">Ward</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-sm-6">
+                                           <p class="form-control-label">(a) Father Details :</p> 
+                                           <input type="text" class="form-control" placeholder="Name of Father" id="input-fatherName" name="fatherName">
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <p>.</p>
+                                           <input type="text" class="form-control" placeholder="Qualification of Father" id="input-fatherQualification" name="fatherQualification">
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-sm-6">
+                                           <p class="form-control-label">(b) Mother Details :</p> 
+                                           <input type="text" class="form-control" placeholder="Name of Mother" id="input-motherName" name="motherName">
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <p>.</p>
+                                           <input type="text" class="form-control" placeholder="Qualification of Mother" id="input-motherQualification" name="otherQualification">
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <p class="form-control-label">(c) Guardian Details :</p> 
+                                           <input type="text" class="form-control" placeholder="Name of Guardian" id="input-guardianName" name="guardianName">
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <p>.</p>
+                                           <input type="text" class="form-control" placeholder="Qualification of Guardian" id="input-guardianQualification" name="guardianQualification">
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">7. Transportation :</h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <select class="custom_select form-control" style="padding-bottom: 5px;" id="input-transportation" name="transportation">
+                                               <option value="Self">Self</option>
+                                               <option value="Auto">Auto</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-6">
+                                           <h6 class="form-control-label">8. Occupation of Parents/Guardian :</h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                           <input class="form-control" type="text" placeholder="Occupation" id="input-occupationOfParets" name="occupationOfParets">
+                                       </div>
+                                   </div>
+           
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-4">
+                                           <h6 class="form-control-label" style="padding-bottom: 10px;">9. Mother Tounge :</h6>
+                                           <input type="text" class="form-control" placeholder="Mother Tounge" id="input-motherTounge" name="motherTounge">
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <h6 class="form-control-label" style="padding-bottom: 10px;"  >10. Religion :</h6>
+                                           <input type="text" class="form-control" placeholder="Religion" id="input-religion" name="religion">
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <h6 class="form-control-label" style="padding-bottom: 10px;">11. Caste :</h6>
+                                           <input type="text" class="form-control" id="input-caste" placeholder="Caste">
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-12">
+                                           <h6 class="form-control-label" style="padding-bottom: 20px;">12. Home Address :</h6>
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label" style="padding-bottom: 10px;">Village/Town :</p>
+                                           <input class="form-control" id="input-town" type="text" name="town" placeholder="Village/Town">
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label" style="padding-bottom: 10px;">Post :</p>
+                                           <input class="form-control" id="input-post" type="text" name="post" placeholder="Post">
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label" style="padding-bottom: 10px;">District :</p>
+                                           <input class="form-control" type="text" id="input-district" name="district" placeholder="District">
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label" style="padding-bottom: 10px;">State :</p>
+                                           <input class="form-control" type="text" id="input-state" name="state" placeholder="State">
+                                       </div>
+                                   </div>
+           
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-12">
+                                           <h6 class="form-control-label" style="padding-bottom: 20px;">13. Full Local Address :</h6>
+                                           <input class="form-control" type="text" id="input-localAddress" placeholder="Enter Your Local Address" name="localAddress">
+                                       </div>
+                                   </div>
+                                   
+                                   <div class="row" style="padding-bottom: 20px;">
+                                       <div class="col-sm-3">
+                                           <h6 class="form-control-label" style="padding-bottom: 10px;">14. Mobile No. :</h6>
+                                           <input class="form-control" type="text" id="input-phone" placeholder="Phone No." name="phone">
+                                       </div>
+                                       <div class="col-sm-5">
+                                           <div class="col-left">
+                                               <h6 class="form-control-label" style="padding-bottom: 10px;">15. Gender</h6>
+                                               <input class="form-control" type="text" id="input-gender" placeholder="gender" name="gender">
+                                           </div>
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <h6 class="form-control-label" style="padding-bottom: 10px;">16. Nationality :</h6>
+                                           <input class="form-control" type="text" id="input-nationality" placeholder="Nationality" name="nationality">
+                                       </div>
+                                   </div>
+                                   <div class="row"  >
+                                       <div class="col-sm-6" >
+                                           <h6 class="form-control-label" >17. Does the Applicant have brother/sister studing in this school</h6>
+                                       </div>
+                                       <div class="col-sm-6">
+                                         <input class="form-control" type="text" id="input-field17" placeholder="" name="field17">
+                                       </div>
+                                   </div>
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-5">
+                                           <p class="form-control-label">(a) Name: </p>
+                                           <input class="form-control" id="input-field17Name" name="field17Name" type="text" placeholder="Full Name">
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label">Class : </p>
+                                           <input class="form-control" id="input-field17Class" name="field17Class" type="text" placeholder="Class">
+                                       </div>
+                                       <div class="col-sm-3">
+                                           <p class="form-control-label">Roll No.: </p>
+                                           <input name="field17Rollno" id="input-field17Rollno" class="form-control" type="text" placeholder="Class">
+                                       </div>
+           
+                                   </div>
+           
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-4">
+                                           <h6 class="form-control-label">18. Aadhar Card No. (attach copy of Aadhar)</h6>
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <input class="form-control" id="input-aadhar" name="aadhar" type="text" placeholder="Aadhar">
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <input name="aadharImg" id="input-aadharImg" class="form-control" type="file" placeholder="AadharPdf">
+                                       </div>
+                                   </div>
+           
+                                   <div class="row" style="padding-bottom: 10px;">
+                                       <div class="col-sm-4">
+                                           <h6 class="form-control-label">19. Name of last institution</h6>
+                                       </div>
+                                       <div class="col-sm-8">
+                                           <input name="lastSchool" id="input-lastSchool" class="form-control" type="text" placeholder="Last Institution">
+                                       </div>
+                                   </div>
+           
+                                   <div class="row form-control-label" style="padding-bottom: 30px;" >
+                                       <div class="col-sm-12">
+                                           <h6 class="form-control-label">20. I agree to follow these following.</h6>
+                                           <p>(a). I declare that the date of birth is correct and shall not ask for change in future.</p>
+                                           <p>(b). I decalare that all other particulars are correct.</p>
+                                           <p>(c). I agree to abide by rules and regulations of the school. I will extend full Co-operation to the proper-development of my child</p>
+                                       </div>
+                                   </div>
+                                   <div class="button-outer">
+                                       <button type="submit" class="btn btn-success" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
+                                   </div>
+                               </form>
                            </div>
                         </div>
-                     </div>
-                  </div>
+                   </div>
                </div>
-            </div>
+           </div>
+           <!-- Row end -->
+           <!-- Tables end -->
+        </div>
             <!-- Row end -->
             <!-- Tables end -->
          </div>

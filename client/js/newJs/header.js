@@ -2,6 +2,13 @@ const template = document.createElement('template');
 template.innerHTML = `
 <header>
 
+<style>
+@media only screen and (min-width: 600px) {
+    #navbr {
+        margin-left: 22%;
+    }
+  }
+</style>
         
 <!-- Start Header top Bar -->
 <div class="header-top">
@@ -38,18 +45,7 @@ template.innerHTML = `
                 <a href="apply-online.html" class="login">Apply Online <span class="icon-more-icon"></span>
                     
                 </a>
-                <!-- <div style="display: inline;" hidden class="dropdown accountBtn">
-                    button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Account
-                    </button><
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <ul class="dropdown-menu">
-                            <li><a href="./profile/dashboard.html">My Account</a></li>
-                            <li><a href="mba-marketing.html">MBA Marketing</a></li>
-                            <li><a href="mba-general.html">MBA General</a></li>
-                            <li><a href="mba-operations.html">MBA Operations</a></li>
-                        </ul>
-                    </div> -->
+                
                   </div>
                 
             </div>
@@ -68,7 +64,7 @@ template.innerHTML = `
                 <input type="text" placeholder="Search Now" class="form-control">
                 <button class="search-btn"><span class="icon-search-icon"></span></button>
             </form> -->
-            <ul class="nav navbar-nav" style="margin-left: 22%">
+            <ul class="nav navbar-nav" id="navbr">
                 <li> <a href="index.html">Home</a></li>
                 <li class="dropdown"> <a data-toggle="dropdown" href="#">About Us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu">
