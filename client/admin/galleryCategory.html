@@ -44,7 +44,16 @@
    <!-- Responsive.css-->
    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-   <link rel="stylesheet" href="./css/admin.css">
+   <style>
+      .galleryPanel {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+  }
+  
+  .galleryPanel td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+  }
+   </style>
 
    <script src="./js/validation.js"></script>
 

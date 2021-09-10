@@ -49,7 +49,7 @@ function listRegistrations() {
             abc.addEventListener('click', () => {
                 localStorage.setItem("registerId", JSON.stringify(register._id)); 
                 
-                window.location.pathname = '/admin/updateRegister.html'
+                window.location.pathname = '/admin/viewRegister.html'
             })
             td3.appendChild(abc);
 

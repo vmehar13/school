@@ -39,8 +39,8 @@ function listGallery() {
             const td3 = document.createElement('td');
             const img = document.createElement('img');
             img.src = `/api/${gallery.photo}`
-            // img.height = '100px';
-            // img.width = "100px"
+            img.height = '150';
+            img.width = "150"
             td3.appendChild(img);
 
 
