@@ -27,7 +27,7 @@ function listRegistrations() {
     })
     .then(res => res.json())
     .then(register => {
-        
+        bl1.innerHTML = register.length
         register.forEach(register => {
         console.log(register);
 
