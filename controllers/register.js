@@ -55,9 +55,6 @@ exports.createRegister = (req, res) => {
         field17Rollno: req.body.field17Rollno,
         aadhar: req.body.aadhar,
         aadharImg: req.files.aadharImg[0].path,
-
-
-
 /*
 
         email: req.body.email,
@@ -77,12 +74,7 @@ exports.createRegister = (req, res) => {
             })
         }
         // res.json(register);
-        res.write(`
-            <h1>Your Request Sumbitted Successfullty</h1>
-            <a href="/index-2.html">Go Back</a>
-            <p>Your Reference ID is ${register._id}
-        `)
-        res.send();
+        res.redirect('/thanks.html')
     })
 }
 
