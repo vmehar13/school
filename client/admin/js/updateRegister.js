@@ -10,7 +10,7 @@ updateF.action = `/api/admin/register/${registerId}/${userId}`
 const API_URL_GET = `/api/register/${registerId}/${userId}`;
 
 
-const profilePic = document.querySelector('#input-profilePic');
+// const profilePic = document.querySelector('#input-profilePic');
 const field1 = document.querySelector('#input-field1');
 const tc = document.querySelector('#input-tc');
 const studentName = document.querySelector('#input-studentName');
@@ -44,6 +44,7 @@ const aadhar = document.querySelector('#input-aadhar')
 const aadharImg = document.querySelector('#input-aadharImg')
 const lastSchool = document.querySelector('#lastSchool')
 const profilePhoto = document.querySelector('#profilePhoto')
+const aadharImg = document.querySelector('input-aadharImg')
 // const = document.querySelector('#')
 
 listRegistration();
@@ -91,6 +92,7 @@ function listRegistration() {
         field17Rollno.value = register.field17Rollno;
         aadhar.value = register.aadhar;
         lastSchool.value = register.lastSchool;
+        aadharImg.href = `/api/${register.aadharImg}`
     })
   }
 

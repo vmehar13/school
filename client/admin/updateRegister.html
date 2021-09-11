@@ -477,10 +477,11 @@
                            <div class="card-block">
                                <form id="updateF" enctype="multipart/form-data" method="POST" class="form-outer">
                                    <div class="row">
+                                    <img id="profilePhoto" style="padding-left: 15px; padding-bottom: 15px;" alt="" width="200" height="200">
+
                                        <div class="col-sm-12">
-                                           <!-- <input type="file" class="form-control" name="profilePic"  placeholder="profile Image"> -->
+                                           <input type="file" class="form-control" name="profilePic"  placeholder="profile Image">
                                        </div>
-                                       <img id="profilePhoto" style="padding-left: 15px; padding-bottom: 15px;" alt="" width="200" height="200">
                                    </div>
                                    <div class="row" style="padding-bottom: 10px;">
                                        <div class="col-sm-6">
@@ -691,7 +692,9 @@
                                            <input class="form-control" id="input-aadhar" name="aadhar" type="text" placeholder="Aadhar">
                                        </div>
                                        <div class="col-sm-4">
-                                           <input name="aadharImg" id="input-aadharImg" class="form-control" type="file" placeholder="AadharPdf">
+                                           <!-- <input name="aadharImg" id="input-aadharImg" class="form-control" type="file" placeholder="AadharPdf"> -->
+                                           <a id="input-aadharImg" class="btn btn-dark text-light" download="Aadhar"> Aadhar Pdf</a>
+
                                        </div>
                                    </div>
            
@@ -713,7 +716,7 @@
                                        </div>
                                    </div>
                                    <div class="button-outer">
-                                       <button type="submit" class="btn btn-success" value="upload">Get Started Now <span class="icon-more-icon"></span></button>
+                                       <button type="submit" class="btn btn-success" value="upload">Update Now <span class="icon-more-icon"></span></button>
                                    </div>
                                </form>
                            </div>

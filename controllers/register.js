@@ -93,41 +93,7 @@ exports.getRegisterAll = (req, res) => {
 
 //for updating data
 exports.updateRegister = (req, res) => {
-    // if(req.files){
-    //     var updates1 = {
-    //         field1: req.body.field1,
-    //         tc: req.body.tc,
-    //         studentName: req.body.studentName,
-    //         dob: req.body.dob,
-    //         weather: req.body.weather,
-    //         applicatIsMy: req.body.applicatIsMy,
-    //         fatherName: req.body.fatherName,
-    //         fatherQualification: req.body.fatherQualification,
-    //         motherName: req.body.motherName,
-    //         motherQualification: req.body.motherQualification,
-    //         guardianName: req.body.guardianName,
-    //         guardianQualification: req.body.guardianQualification,
-    //         transportation: req.body.transportation,
-    //         occupationOfParets: req.body.occupationOfParets,
-    //         motherTounge: req.body.motherTounge,
-    //         religion: req.body.religion,
-    //         town: req.body.town,
-    //         post: req.body.post,
-    //         district: req.body.district,
-    //         state: req.body.state,
-    //         localAddress: req.body.localAddress,
-    //         phone: req.body.phone,
-    //         gender: req.body.gender,
-    //         nationality: req.body.nationality,
-    //         field17: req.body.field17,
-    //         field17Name: req.body.field17Name,
-    //         field17Class: req.body.field17Class,
-    //         field17Rollno: req.body.field17Rollno,
-    //         aadhar: req.body.aadhar,
-    //         aadharimg: req.files.aadharImg[0].path,
-    //         profile: req.files.profilePic[0].path,
-    //     }
-    // }
+    if(req.files){
         var updates1 = {
             field1: req.body.field1,
             tc: req.body.tc,
@@ -158,10 +124,45 @@ exports.updateRegister = (req, res) => {
             field17Class: req.body.field17Class,
             field17Rollno: req.body.field17Rollno,
             aadhar: req.body.aadhar,
-            aadharimg: req.files.aadharImg[0].path,
+            // aadharimg: req.files.aadharImg[0].path,
             profile: req.files.profilePic[0].path,
         }
-
+    }
+    else{
+        var updates1 = {
+            field1: req.body.field1,
+            tc: req.body.tc,
+            studentName: req.body.studentName,
+            dob: req.body.dob,
+            weather: req.body.weather,
+            applicatIsMy: req.body.applicatIsMy,
+            fatherName: req.body.fatherName,
+            fatherQualification: req.body.fatherQualification,
+            motherName: req.body.motherName,
+            motherQualification: req.body.motherQualification,
+            guardianName: req.body.guardianName,
+            guardianQualification: req.body.guardianQualification,
+            transportation: req.body.transportation,
+            occupationOfParets: req.body.occupationOfParets,
+            motherTounge: req.body.motherTounge,
+            religion: req.body.religion,
+            town: req.body.town,
+            post: req.body.post,
+            district: req.body.district,
+            state: req.body.state,
+            localAddress: req.body.localAddress,
+            phone: req.body.phone,
+            gender: req.body.gender,
+            nationality: req.body.nationality,
+            field17: req.body.field17,
+            field17Name: req.body.field17Name,
+            field17Class: req.body.field17Class,
+            field17Rollno: req.body.field17Rollno,
+            aadhar: req.body.aadhar
+            // aadharimg: req.files.aadharImg[0].path,
+            // profile: req.files.profilePic[0].path,
+        }
+    }
     
 
 Register.findOneAndUpdate(req.param.registerId, {
