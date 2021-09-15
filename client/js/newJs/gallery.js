@@ -94,8 +94,8 @@ function listGallery() {
             img1.src = `/api/${gallery.photo}`;
             img1.alt = "";
 
-            a1.appendChild(img);
-            li1.appendChild(a);
+            a1.appendChild(img1);
+            li1.appendChild(a1);
 
             if(gallery.category == "classes"){
                 imageSliderClasses.appendChild(li1);
