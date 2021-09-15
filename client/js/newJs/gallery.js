@@ -8,12 +8,13 @@ const SliderContainerMusic = document.querySelector('#SliderContainerMusic');
 
 
 
-const imageSlider = document.querySelector('#image-slider-all');
+const imageSliderAll = document.querySelector('#image-slider-all');
 const imageSliderClasses = document.querySelector('#image-slider-classes');
 const imageSliderParty = document.querySelector('#image-slider-party');
 const imageSliderContest = document.querySelector('#image-slider-contest');
 const imageSliderMusic = document.querySelector('#image-slider-music');
 
+//li's
 const all1 = document.getElementById('all');
 const classes1 = document.getElementById('classes');
 const party1 = document.getElementById('party');
@@ -75,7 +76,8 @@ function listGallery() {
 
             a.appendChild(img);
             li.appendChild(a);
-            imageSlider.appendChild(li);
+            imageSliderAll.appendChild(li);
+            
             if(gallery.category == "classes"){
                 imageSliderClasses.appendChild(li);
             }
