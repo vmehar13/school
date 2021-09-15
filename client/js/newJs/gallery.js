@@ -8,12 +8,17 @@ const SliderContainerMusic = document.querySelector('#SliderContainerMusic');
 
 
 
-const imageSlider = document.querySelector('#image-slider');
+const imageSlider = document.querySelector('#image-slider-all');
 const imageSliderClasses = document.querySelector('#image-slider-classes');
 const imageSliderParty = document.querySelector('#image-slider-party');
 const imageSliderContest = document.querySelector('#image-slider-contest');
 const imageSliderMusic = document.querySelector('#image-slider-music');
 
+const all1 = document.getElementById('all');
+const classes1 = document.getElementById('classes');
+const party1 = document.getElementById('party');
+const contest1 = document.getElementById('contest');
+const music1 = document.getElementById('music');
 
 
 listGallery();
@@ -57,8 +62,8 @@ function listGallery() {
             //     li.appendChild(figure);
             //     panel1.appendChild(li);
             const li = document.createElement('li');
-            li.className = `isotopeSelector ${gallery.category}`
-            li.style = "post"
+            li.className = `${gallery.category}`
+            // li.style = "post"
 
             const a = document.createElement('a');
             a.href = "#";
@@ -89,7 +94,15 @@ function listGallery() {
 }
 
 
-function all(){
+function allBtn(){
+    all1.className = "active"
+    classes1.className = ""
+    party1.className = ""
+    contest1.className = ""
+    music1.className = ""
+
+
+
     SliderContainerAll.hidden = false
     SliderContainerClasses.hidden = true
     SliderContainerParty.hidden = true
@@ -98,6 +111,12 @@ function all(){
 }
 
 function classes(){
+    all1.className = ""
+    classes1.className = "active"
+    party1.className = ""
+    contest1.className = ""
+    music1.className = ""
+
     SliderContainerAll.hidden = true
     SliderContainerClasses.hidden = false
     SliderContainerParty.hidden = true
@@ -106,6 +125,12 @@ function classes(){
 }
 
 function party(){
+    all1.className = ""
+    classes1.className = ""
+    party1.className = "active"
+    contest1.className = ""
+    music1.className = ""
+
     SliderContainerAll.hidden = true
     SliderContainerClasses.hidden = true
     SliderContainerParty.hidden = false
@@ -114,6 +139,12 @@ function party(){
 }
 
 function contest(){
+    all1.className = ""
+    classes1.className = ""
+    party1.className = ""
+    contest1.className = "active"
+    music1.className = ""
+
     SliderContainerAll.hidden = true
     SliderContainerClasses.hidden = true
     SliderContainerParty.hidden = true
@@ -122,6 +153,12 @@ function contest(){
 }
 
 function music(){
+    all1.className = ""
+    classes1.className = ""
+    party1.className = ""
+    contest1.className = ""
+    music1.className = "active"
+
     SliderContainerAll.hidden = true
     SliderContainerClasses.hidden = true
     SliderContainerParty.hidden = true

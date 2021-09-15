@@ -175,7 +175,7 @@ Register.findOneAndUpdate(req.param.registerId, {
         })
     }
     // res.json(updateRegister)
-    res.redirect('/thanks.html')
+    res.redirect('/admin/thanks.html')
 })
 
     
