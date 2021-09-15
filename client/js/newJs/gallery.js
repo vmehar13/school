@@ -65,6 +65,7 @@ function listGallery() {
             const li = document.createElement('li');
             li.className = `${gallery.category}`
             // li.style = "post"
+            
 
             const a = document.createElement('a');
             a.href = "#";
@@ -76,23 +77,37 @@ function listGallery() {
 
             a.appendChild(img);
             li.appendChild(a);
-            // imageSliderAll.appendChild(li);
+            imageSliderAll.appendChild(li);
+
+            //forall
+
+            const li1 = document.createElement('li');
+            li1.className = `${gallery.category}`
+            // li.style = "post"
+            
+
+            const a1 = document.createElement('a');
+            a1.href = "#";
+
+            const img1 = document.createElement('img');
+            img1.className = 'img-responsive';
+            img1.src = `/api/${gallery.photo}`;
+            img1.alt = "";
+
+            a1.appendChild(img);
+            li1.appendChild(a);
 
             if(gallery.category == "classes"){
-                imageSliderClasses.appendChild(li);
-                imageSliderAll.appendChild(li);
+                imageSliderClasses.appendChild(li1);
             }
             else if(gallery.category == "Party"){
-                imageSliderParty.appendChild(li);
-                imageSliderAll.appendChild(li);
+                imageSliderParty.appendChild(li1);
             }
             else if(gallery.category == "contest"){
-                imageSliderContest.appendChild(li)
-                imageSliderAll.appendChild(li);
+                imageSliderContest.appendChild(li1)
             }
             else{
-                imageSliderMusic.appendChild(li);
-                imageSliderAll.appendChild(li);
+                imageSliderMusic.appendChild(li1);
             }
 
         })
