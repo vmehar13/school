@@ -234,21 +234,21 @@
                     autoplayHoverPause: true,
                     responsive: {
                         0: {
-                            items: 2
+                            items: 3
                         },
 
                         480: {
-                            items: 3,
-                            margin: 20
-                        },
-
-                        768: {
                             items: 4,
                             margin: 20
                         },
 
-                        1024: {
+                        768: {
                             items: 5,
+                            margin: 20
+                        },
+
+                        1024: {
+                            items: 6,
                             margin: 30
                         },
 

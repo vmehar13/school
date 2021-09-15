@@ -17,6 +17,9 @@ router.post('/gallery/create/:userId', isAdmin, upload.single('photo'), createGa
 //Read
 router.get('/gallery', getAllGallery);
 
+//Read by category
+// router.get('/gallery/:categoryId', getGalleryByCategory)
+
 //Delete
 router.delete('/gallery/:galleryId/:userId', isSignedIn, isAuthenticated, isAdmin, deleteGallery);
 

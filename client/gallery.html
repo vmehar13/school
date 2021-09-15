@@ -23,7 +23,24 @@
     <link href="assets/magnific-popup/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/iconmoon/css/iconmoon.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
+    <link href="assets/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+<style>
+    #btnAll, #btnClasses, #btnEvents, #btnSports, #btnMusic {
+        background: none;
+                        color: inherit;
+                        color: h;
+                        border: none;
+                        padding: 0;
+                        margin-bottom: 30px;
+                        font: inherit;
+                        cursor: pointer;
+                        outline: inherit;
+    }
+    #btnAll:hover, #btnClasses:hover, #btnEvents:hover, #btnSports:hover, #btnMusic:hover {
+        color: black;
+    }
+    </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
@@ -70,148 +87,76 @@
         </div>
     </div>
 
+    
     <!-- ==============================================
     ** Campus Tour **
     =================================================== -->
-    <section class="campus-tour padding-lg">
+    <section class="campus-tour padding-lg logos" style="overflow: hidden;">
         <!-- gallery filter -->
         <div class="container text-center">
             <div class="isotopeFilters">
                 <ul class="gallery-filter clearfix">
-                    <li class="active"><a href="#" data-filter="*">All</a></li>
-                    <li><a href="#" data-filter=".classes">Classes</a></li>
+                    <!-- <li class="active"><button style="none">All</button></li> -->
+                    <li class="active">
+                        <button id="btnAll" onclick="all()" type="button">All</button>
+                    </li>
+                    <li>
+                        <button id="btnClasses" onclick="classes()" type="button">Classes</button>
+                    </li>
+                    <li>
+                        <button id="btnEvents" onclick="party()" type="button">Events</button>
+                    </li>
+                    <li>
+                        <button id="btnSports" onclick="contest()" type="button">Sports Contest</button>
+                    </li>
+                    <li>
+                        <button id="btnMusic" onclick="music()" type="button">Music Contest</button>
+                    </li>
+                    <!-- <li><a href="#" data-filter=".classes">Classes</a></li>
                     <li><a href="#" data-filter=".Party">Event</a></li>
                     <li><a href="#" data-filter=".contest">Sport Contest</a></li>
-                    <li><a href="#" data-filter=".music">Music Concert</a></li>
+                    <li><a href="#" data-filter=".music">Music Concert</a></li> -->
                 </ul>
             </div>
         </div>
         <!-- end filter -->
+        <div class="container-fluid" id="SliderContainerAll" style="width: 150%; ">
+            <ul class=" owl-carousel clearfix" id="image-slider">
+                
+
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="SliderContainerClasses" hidden style="width: 150%; ">
+            <ul class=" owl-carousel clearfix" id="image-slider-classes">
+                
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="SliderContainerParty" hidden style="width: 150%; ">
+            <ul class=" owl-carousel clearfix" id="image-slider-party">
+                
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="SliderContainerContest" hidden style="width: 150%; ">
+            <ul class=" owl-carousel clearfix" id="image-slider-contest">
+              
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="SliderContainerMusic" hidden style="width: 150%; ">
+            <ul class=" owl-carousel clearfix" id="image-slider-music">
+                <!-- <li><a href="#"><img src="images2/4.png" class="img-responsive" alt=""></a></li>
+                <li><a href="#"><img src="images2/5.png" class="img-responsive" alt=""></a></li>
+                <li><a href="#"><img src="images2/6.png" class="img-responsive" alt=""></a></li>
+                <li><a href="#"><img src="images2/7.png" class="img-responsive" alt=""></a></li>
+                <li><a href="#"><img src="images2/8.png" class="img-responsive" alt=""></a></li> -->
+            </ul>
+        </div>
         <ul class="gallery clearfix isotopeContainer panel1">
-            <li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/1.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/1.png" class="img-responsive" alt=""></figure>
-            </li>
-            <li class="isotopeSelector classes">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/2.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/2.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector classes">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/3.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/3.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector classes">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/4.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/4.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/5.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/5.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/6.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/6.png" class="img-responsive" alt=""></figure>
-            </li>
-            <li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/7.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/7.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/8.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/8.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/9.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/9.png" class="img-responsive" alt=""></figure>
-            </li>
-            <li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/10.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/10.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/11.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/11.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/12.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/12.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/13.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/13.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector Party">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/14.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/14.png" class="img-responsive" alt=""></figure>
-            </li><li class="isotopeSelector classes">
-                <div class="overlay">
-                    <!-- <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum</p> -->
-                    <a class="galleryItem" href="images2/15.png"><span class="icon-enlarge-icon"></span></a> 
-                    <!-- <a href="#" class="more"><span class="icon-gallery-more-arrow"></span></a> -->
-                </div>
-                <figure><img src="images2/15.png" class="img-responsive" alt=""></figure>
-            </li>
+            
+            
             <!-- <li class="isotopeSelector Party contest music">
                 <div class="overlay">
                     <h3>Lorem ipsum</h3>
@@ -336,7 +281,11 @@
             </ul>
         </div>
     </section>
-
+    <section class="logos">
+        
+    </section>
+ 
+    
     <!-- ==============================================
     ** Footer **
     =================================================== -->
@@ -383,6 +332,11 @@
     <script src="assets/magnific-popup/js/magnific-popup.min.js"></script>
     <script src="assets/isotope/js/isotope.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+
+    
+
+
 
     <script src="./js/newJs/gallery.js"></script>
 </body>

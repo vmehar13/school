@@ -44,7 +44,7 @@ const aadhar = document.querySelector('#input-aadhar')
 const aadharImg = document.querySelector('#input-aadharImg')
 const lastSchool = document.querySelector('#lastSchool')
 const profilePhoto = document.querySelector('#profilePhoto')
-const aadharImg = document.querySelector('input-aadharImg')
+// const aadharImg = document.querySelector('input-aadharImg')
 // const = document.querySelector('#')
 
 listRegistration();
