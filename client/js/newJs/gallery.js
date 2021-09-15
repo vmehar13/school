@@ -76,19 +76,23 @@ function listGallery() {
 
             a.appendChild(img);
             li.appendChild(a);
-            imageSliderAll.appendChild(li);
-            
+            // imageSliderAll.appendChild(li);
+
             if(gallery.category == "classes"){
                 imageSliderClasses.appendChild(li);
+                imageSliderAll.appendChild(li);
             }
             else if(gallery.category == "Party"){
                 imageSliderParty.appendChild(li);
+                imageSliderAll.appendChild(li);
             }
             else if(gallery.category == "contest"){
                 imageSliderContest.appendChild(li)
+                imageSliderAll.appendChild(li);
             }
             else{
                 imageSliderMusic.appendChild(li);
+                imageSliderAll.appendChild(li);
             }
 
         })
