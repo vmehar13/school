@@ -174,7 +174,8 @@ Register.findOneAndUpdate(req.param.registerId, {
             error: "Unable to UPDATE DATA in DB"
         })
     }
-    res.json(updateRegister)
+    // res.json(updateRegister)
+    res.redirect('/thanks.html')
 })
 
     
